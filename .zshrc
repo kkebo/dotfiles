@@ -17,14 +17,38 @@ PROMPT="%n@%m:%{${fg[yellow]}%}%~%{${reset_color}%}%# "
 setopt transient_rprompt
 ##
 
-export PATH=$HOME/opt/cross/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:~/.cabal/bin:/usr/local/mysql/bin:/sbin:/usr/sbin:/usr/bin:$PATH
+PATH=/usr/local/bin:$PATH
 
-alias ls='gls --color=auto'
+# cross compiler
+if [ -e ~/opt/cross ]; then
+	PATH=~/opt/cross/bin:$PATH
+fi
 
-eval $(gdircolors ~/.dircolors-solarized)
+export PATH
+
+# gls
+if [ -e /usr/local/bin/gls ]; then
+	alias ls='gls --color=auto'
+fi
 
 alias ll='ls -l'
 alias la='ls -la'
 
-source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# zsh-syntax-highlighting
+if [ -e /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
+	source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
 
+# zsh-history-substring-search
+if [ -e /usr/local/opt/zsh-history-substring-search/zsh-history-substring-search.zsh ]; then
+	source /usr/local/opt/zsh-history-substring-search/zsh-history-substring-search.zsh
+
+	# bind UP and DOWN arrow keys
+	bindkey '^[[A' history-substring-search-up
+	bindkey '^[[B' history-substring-search-down
+fi
+
+# zsh-completions
+if [ -e /usr/local/share/zsh-completions ]; then
+	fpath=(/usr/local/share/zsh-completions $fpath)
+fi

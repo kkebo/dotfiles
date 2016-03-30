@@ -1,0 +1,20 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'Shougo/vimproc.vim'
+	[plugins.build]
+	windows = 'tools\\update-dll-mingw'
+	cygwin  = 'make -f make_cygwin.mak'
+	mac     = 'make -f make_mac.mak'
+	linux   = 'make'
+	unix    = 'gmake'
+
+[[plugins]]
+repo = 'jpo/vim-railscasts-theme'
+
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+
+[[plugins]]
+repo = 'terryma/vim-multiple-cursors'

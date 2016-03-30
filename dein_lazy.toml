@@ -1,0 +1,7 @@
+[[plugins]]
+repo = 'Shougo/neocomplete.vim'
+on_i = 1
+
+[[plugins]]
+repo  = 'mattn/emmet-vim'
+on_ft = ['html', 'css', 'sass', 'php']

@@ -6,6 +6,7 @@ HISTSIZE=1000000
 SAVEHIST=1000000
 
 autoload -Uz compinit; compinit
+zstyle ':completion:*:default' menu select=2
 
 setopt auto_cd
 setopt auto_pushd

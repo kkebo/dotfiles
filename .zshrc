@@ -18,7 +18,7 @@ PROMPT="%n@%m:%{${fg[yellow]}%}%~%{${reset_color}%}%# "
 setopt transient_rprompt
 ##
 
-PATH=/usr/local/bin:$PATH
+PATH=/usr/bin:/usr/local/bin:$PATH
 
 # cross compiler
 if [ -e ~/opt/cross ]; then
@@ -30,6 +30,8 @@ export PATH
 # gls
 if [ -e /usr/local/bin/gls ]; then
 	alias ls='gls --color=auto'
+else
+	alias ls='ls --color=auto'
 fi
 
 alias ll='ls -l'

@@ -55,3 +55,8 @@ fi
 if [ -e /usr/local/share/zsh-completions ]; then
 	fpath=(/usr/local/share/zsh-completions $fpath)
 fi
+
+# zsh-autosuggestions
+if [ -e /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
+	source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+fi

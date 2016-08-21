@@ -1,6 +1,4 @@
 # Created by newuser for 5.0.2
-export LANG=ja_JP.UTF-8
-
 HISTFILE=~/.zsh_history
 HISTSIZE=1000000
 SAVEHIST=1000000
@@ -17,15 +15,6 @@ autoload colors; colors
 PROMPT="%n@%m:%{${fg[yellow]}%}%~%{${reset_color}%}%# "
 setopt transient_rprompt
 ##
-
-PATH=/usr/bin:/usr/local/bin:$PATH
-
-# cross compiler
-if [ -e ~/opt/cross ]; then
-	PATH=~/opt/cross/bin:$PATH
-fi
-
-export PATH
 
 # gls
 if [ -e /usr/local/bin/gls ]; then

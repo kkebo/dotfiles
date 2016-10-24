@@ -26,15 +26,17 @@ fi
 alias ll='ls -l'
 alias la='ls -la'
 
+ZSH_PLUGINS_DIR=/usr/local/opt
+
 # zsh-syntax-highlighting
-export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighti    ng/highlighters
-if [ -e /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
-	source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=$ZSH_PLUGINS_DIR/zsh-syntax-highlighting/highlighters
+if [ -e $ZSH_PLUGINS_DIR/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
+	source $ZSH_PLUGINS_DIR/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi
 
 # zsh-history-substring-search
-if [ -e /usr/local/opt/zsh-history-substring-search/zsh-history-substring-search.zsh ]; then
-	source /usr/local/opt/zsh-history-substring-search/zsh-history-substring-search.zsh
+if [ -e $ZSH_PLUGINS_DIR/zsh-history-substring-search/zsh-history-substring-search.zsh ]; then
+	source $ZSH_PLUGINS_DIR/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 	# bind UP and DOWN arrow keys
 	bindkey '^[[A' history-substring-search-up
@@ -42,11 +44,11 @@ if [ -e /usr/local/opt/zsh-history-substring-search/zsh-history-substring-search
 fi
 
 # zsh-completions
-if [ -e /usr/local/share/zsh-completions ]; then
-	fpath=(/usr/local/share/zsh-completions $fpath)
+if [ -e $ZSH_PLUGINS_DIR/zsh-completions ]; then
+	fpath=($ZSH_PLUGINS_DIR/zsh-completions $fpath)
 fi
 
 # zsh-autosuggestions
-if [ -e /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
-	source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+if [ -e $ZSH_PLUGINS_DIR/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
+	source $ZSH_PLUGINS_DIR/zsh-autosuggestions/zsh-autosuggestions.zsh
 fi

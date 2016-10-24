@@ -39,8 +39,6 @@ fi
 alias ll='ls -l'
 alias la='ls -la'
 
-ZSH_PLUGINS_DIR=/usr/local/opt
-
 # zsh-syntax-highlighting
 if [ -e $ZSH_PLUGINS_DIR/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
 	source $ZSH_PLUGINS_DIR/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

@@ -29,9 +29,12 @@ alias la='ls -la'
 ZSH_PLUGINS_DIR=/usr/local/opt
 
 # zsh-syntax-highlighting
-export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=$ZSH_PLUGINS_DIR/zsh-syntax-highlighting/highlighters
 if [ -e $ZSH_PLUGINS_DIR/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
 	source $ZSH_PLUGINS_DIR/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+	export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=$ZSH_PLUGINS_DIR/zsh-syntax-highlighting/highlighters
+elif [ -e $ZSH_PLUGINS_DIR/zsh-syntax-highlighting/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
+	source $ZSH_PLUGINS_DIR/zsh-syntax-highlighting/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+	export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=$ZSH_PLUGINS_DIR/zsh-syntax-highlighting/share/zsh-syntax-highlighting/highlighters
 fi
 
 # zsh-history-substring-search
@@ -46,9 +49,19 @@ fi
 # zsh-completions
 if [ -e $ZSH_PLUGINS_DIR/zsh-completions ]; then
 	fpath=($ZSH_PLUGINS_DIR/zsh-completions $fpath)
+elif [ -e $ZSH_PLUGINS_DIR/zsh-completions/share/zsh-completions ]; then
+	fpath=($ZSH_PLUGINS_DIR/zsh-completions/share/zsh-completions $fpath)
 fi
 
 # zsh-autosuggestions
 if [ -e $ZSH_PLUGINS_DIR/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
 	source $ZSH_PLUGINS_DIR/zsh-autosuggestions/zsh-autosuggestions.zsh
+elif [ -e $ZSH_PLUGINS_DIR/zsh-autosuggestions/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
+	source $ZSH_PLUGINS_DIR/zsh-autosuggestions/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+fi
+
+# zsh-git-prompt
+if [ -e $ZSH_PLUGINS_DIR/zsh-git-prompt/zshrc.sh ]; then
+	source $ZSH_PLUGINS_DIR/zsh-git-prompt/zshrc.sh
+	RPROMPT="$(git_super_status)"
 fi

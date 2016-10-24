@@ -9,10 +9,23 @@ zstyle ':completion:*:default' menu select=2
 setopt auto_cd
 setopt auto_pushd
 setopt print_eight_bit
+setopt prompt_subst
+
+autoload -Uz add-zsh-hook
+autoload -Uz vcs_info
+zstyle ':vcs_info:*' enable git
+zstyle ':vcs_info:git:*' check-for-changes true
+function get_vcs_info() {
+	psvar=()
+	vcs_info
+	[[ -n $vcs_info_msg_0_ ]] && psvar[1]="$vcs_info_msg_0_"
+}
+add-zsh-hook precmd get_vcs_info
 
 ##
 autoload colors; colors
 PROMPT="%n@%m:%{${fg[yellow]}%}%~%{${reset_color}%}%# "
+RPROMPT="%v"
 setopt transient_rprompt
 ##
 
@@ -58,10 +71,4 @@ if [ -e $ZSH_PLUGINS_DIR/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
 	source $ZSH_PLUGINS_DIR/zsh-autosuggestions/zsh-autosuggestions.zsh
 elif [ -e $ZSH_PLUGINS_DIR/zsh-autosuggestions/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
 	source $ZSH_PLUGINS_DIR/zsh-autosuggestions/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-fi
-
-# zsh-git-prompt
-if [ -e $ZSH_PLUGINS_DIR/zsh-git-prompt/zshrc.sh ]; then
-	source $ZSH_PLUGINS_DIR/zsh-git-prompt/zshrc.sh
-	RPROMPT="$(git_super_status)"
 fi

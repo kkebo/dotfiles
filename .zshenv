@@ -11,4 +11,4 @@ fi
 
 export PATH
 
-ZSH_PLUGINS_DIR=/usr/local/opt
+ZSH_PLUGINS_DIR=$HOME/.zsh

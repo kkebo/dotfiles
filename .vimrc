@@ -13,6 +13,7 @@ if &runtimepath !~# '/dein.vim'
 	execute 'set runtimepath^=' . fnamemodify(s:dein_repo_dir, ':p')
 endif
 
+
 " 設定開始
 if dein#load_state(s:dein_dir)
 	call dein#begin(s:dein_dir)
@@ -36,12 +37,34 @@ if dein#check_install()
 endif
 
 " 一般設定
-set number
-set backspace=indent,eol,start
 syntax enable
+
+set tabstop=4
+set softtabstop=4
+"set expandtab
 set autoindent
 set smartindent
+
+set number
+set showcmd
 set laststatus=2
+set cursorline
+filetype indent on
+set wildmenu
+set lazyredraw
+set showmatch
+
+set incsearch
+set hlsearch
+nnoremap <leader><space> :nohlsearch<CR>
+
+set foldenable
+set foldlevelstart=10
+set foldnestmax=10
+nnoremap <space> za
+set foldmethod=indent
+
+set backspace=indent,eol,start
 
 augroup BinaryXXD
 	autocmd!

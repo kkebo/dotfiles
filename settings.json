@@ -1,0 +1,13 @@
+{
+    "files.autoSave": "afterDelay",
+    "editor.renderWhitespace": "boundary",
+    "files.autoSaveDelay": 1000,
+	"editor.insertSpaces": false,
+
+    "workbench.colorTheme": "RailsCasts",
+    "workbench.sideBar.location": "left",
+
+    "terminal.integrated.shell.windows": "c:\\windows\\sysnative\\bash.exe",
+    "terminal.integrated.shellArgs.windows": [
+    ]
+}

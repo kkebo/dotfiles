@@ -2,12 +2,17 @@
     "files.autoSave": "afterDelay",
     "editor.renderWhitespace": "boundary",
     "files.autoSaveDelay": 1000,
-	"editor.insertSpaces": false,
+    "editor.insertSpaces": false,
+    "editor.tabSize": 4,
+    "files.eol": "\n",
 
     "workbench.colorTheme": "RailsCasts",
     "workbench.sideBar.location": "left",
 
+    "terminal.external.windowsExec": "c:\\windows\\sysnative\\bash.exe -c /usr/sbin/zsh",
     "terminal.integrated.shell.windows": "c:\\windows\\sysnative\\bash.exe",
     "terminal.integrated.shellArgs.windows": [
+        "-c",
+        "/usr/sbin/zsh"
     ]
 }

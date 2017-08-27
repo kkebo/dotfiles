@@ -7,7 +7,7 @@ My dotfiles for macOS, Linux, or Windows Subsystem for Linux.
 	- vim 設定ファイル
 - `.vim/dein*`
 	- vim のプラグイン定義
-- `.zshrc and .zshenv`
+- `.zshrc` and `.zshenv`
 	- zsh 設定ファイル
 - `.zsh/installer.sh`
 	- zsh のプラグインインストーラ

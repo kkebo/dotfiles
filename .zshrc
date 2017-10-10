@@ -8,6 +8,8 @@ umask 022
 autoload -Uz compinit; compinit
 zstyle ':completion:*:default' menu select=2
 
+bindkey -e
+
 setopt auto_cd
 setopt auto_pushd
 setopt print_eight_bit

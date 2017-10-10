@@ -5,6 +5,8 @@
     "editor.insertSpaces": false,
     "editor.tabSize": 4,
     "files.eol": "\n",
+    "editor.fontFamily": "SF Mono",
+    "window.nativeTabs": true,
 
     "workbench.colorTheme": "RailsCasts",
     "workbench.sideBar.location": "left",
@@ -14,5 +16,7 @@
     "terminal.integrated.shellArgs.windows": [
         "-c",
         "/usr/sbin/zsh"
-    ]
+    ],
+    "git.confirmSync": false,
+    "workbench.activityBar.visible": true
 }

@@ -14,6 +14,12 @@ export LANG=en_US.UTF-8
 if [ -e $HOME/.cargo/bin ]; then
 	export PATH=$HOME/.cargo/bin:$PATH
 fi
+if [[ "$OSTYPE" == darwin* ]]; then
+	export PATH=/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin:$PATH
+fi
+
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
 
 # cross compiler
 if [ -e ~/opt/cross ]; then

@@ -1,9 +1,7 @@
-# Created by newuser for 5.0.2
 HISTFILE=~/.zsh_history
 HISTSIZE=1000000
 SAVEHIST=1000000
-
-umask 022
+ZSH_PLUGINS_DIR=$HOME/.zsh
 
 autoload -Uz compinit; compinit
 zstyle ':completion:*:default' menu select=2

@@ -34,7 +34,7 @@ setopt transient_rprompt
 # gls
 if [ -e /usr/local/bin/gls ]; then
 	alias ls='gls --color=auto'
-elif [[ “$OSTYPE” != darwin* ]]; then
+elif [[ "$OSTYPE" != darwin* ]]; then
 	alias ls='ls --color=auto'
 fi
 

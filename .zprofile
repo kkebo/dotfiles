@@ -21,6 +21,16 @@ fi
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
+if [ -e $HOME/.nvm ]; then
+	export NVM_DIR=$HOME/.nvm
+	. /usr/local/opt/nvm/nvm.sh
+fi
+
+if [ -e $HOME/opt/emsdk-portable ]; then
+	export PATH=$PATH:$HOME/opt/emsdk-portable
+	. $HOME/opt/emsdk-portable/emsdk_env.sh
+fi
+
 # cross compiler
 if [ -e ~/opt/cross ]; then
 	export PATH=~/opt/cross/bin:$PATH

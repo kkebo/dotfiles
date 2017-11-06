@@ -28,7 +28,7 @@ fi
 
 if [ -e $HOME/opt/emsdk-portable ]; then
 	export PATH=$PATH:$HOME/opt/emsdk-portable
-	. $HOME/opt/emsdk-portable/emsdk_env.sh
+#	. $HOME/opt/emsdk-portable/emsdk_env.sh
 fi
 
 # cross compiler

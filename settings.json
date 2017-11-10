@@ -18,5 +18,7 @@
         "/usr/sbin/zsh"
     ],
     "git.confirmSync": false,
-    "workbench.activityBar.visible": true
+    "workbench.activityBar.visible": true,
+    "python.pythonPath": "python3",
+    "workbench.panel.location": "right"
 }

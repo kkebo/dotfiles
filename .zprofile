@@ -36,12 +36,6 @@ if [ -e $HOME/.nvm ]; then
 	nvm use 9.0
 fi
 
-# Emscripten
-if [ -e $HOME/opt/emsdk-portable ]; then
-	export PATH=$PATH:$HOME/opt/emsdk-portable
-#	. $HOME/opt/emsdk-portable/emsdk_env.sh
-fi
-
 # cross compiler
 if [ -e ~/opt/cross ]; then
 	export PATH=~/opt/cross/bin:$PATH

@@ -1,3 +1,8 @@
 [[plugins]]
 repo  = 'mattn/emmet-vim'
 on_ft = ['html', 'css', 'sass', 'php']
+
+[[plugins]]
+repo = 'zchee/deoplete-jedi'
+depends = ['deoplete.nvim']
+on_ft = ['python']

@@ -24,3 +24,19 @@ repo = 'itchyny/lightline.vim'
 
 [[plugins]]
 repo = 'terryma/vim-multiple-cursors'
+
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+depends = ['nvim-yarp', 'vim-hug-neovim-rpc']
+hook_add = 'let g:deoplete#enable_at_startup = 1'
+
+[[plugins]]
+repo = 'roxma/nvim-yarp'
+if = '''!has('nvim')'''
+
+[[plugins]]
+repo = 'roxma/vim-hug-neovim-rpc'
+if = '''!has('nvim')'''
+
+[[plugins]]
+repo = 'Shougo/neco-vim'

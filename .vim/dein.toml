@@ -40,3 +40,4 @@ if = '''!has('nvim')'''
 
 [[plugins]]
 repo = 'Shougo/neco-vim'
+depends = ['deoplete.nvim']

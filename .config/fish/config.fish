@@ -21,9 +21,9 @@ if test -e $HOME/.cargo/bin
 end
 
 # Visual Studio Code
-if test -e /Applications/Visual Studio Code.app/Contents/Resources/app/bin
+if test -e "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 	set -x PATH /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin $PATH
-fi
+end
 
 # Go
 set -x GOPATH $HOME/go

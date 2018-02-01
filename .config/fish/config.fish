@@ -43,3 +43,7 @@ end
 if test -e /opt/VirtualGL/bin
     set -x PATH /opt/VirtualGL/bin $PATH
 end
+
+# bobthefish
+set -g theme_nerd_fonts yes
+set -g theme_color_scheme terminal

@@ -49,6 +49,9 @@ set -g theme_nerd_fonts yes
 set -g theme_color_scheme terminal
 set -x VIRTUAL_ENV_DISABLE_PROMPT 1
 
+# done
+set -U __done_min_cmd_duration 5000
+
 # include environment-specific configure
 set DIR (dirname (status --current-filename))
 for file in $DIR/include/*.fish

@@ -11,7 +11,7 @@ My dotfiles for macOS, Linux, or Windows Subsystem for Linux.
 
 ### fish
 
-- `.config/fish/*`
+- `.config/fish/config.fish`
 
 ### tmux
 
@@ -42,8 +42,8 @@ ln -s $HOME/dotfiles/.vimrc .
 ln -s $HOME/dotfiles/.vim .
 
 # Install fish configuration
-mkdir .config
-ln -s $HOME/dotfiles/.config/fish .config/
+mkdir -p .config/fish
+ln -s $HOME/dotfiles/.config/fish/config.fish .config/fish/
 
 # Install tmux configuration
 ln -s $HOME/dotfiles/.tmux.conf .

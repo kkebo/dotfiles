@@ -46,11 +46,12 @@ set expandtab
 set autoindent
 set smartindent
 
+filetype plugin indent on
+
 set number
 set showcmd
 set laststatus=2
 set cursorline
-filetype indent on
 set wildmenu
 set lazyredraw
 set showmatch

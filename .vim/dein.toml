@@ -20,9 +20,6 @@ hook_post_update = '''
 repo = 'jpo/vim-railscasts-theme'
 
 [[plugins]]
-repo = 'itchyny/lightline.vim'
-
-[[plugins]]
 repo = 'terryma/vim-multiple-cursors'
 
 [[plugins]]

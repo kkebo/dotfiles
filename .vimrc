@@ -32,7 +32,7 @@ endif
 " Default settings
 source $VIMRUNTIME/defaults.vim
 
-" Indents
+" Indentation
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
@@ -42,12 +42,15 @@ set smartindent
 
 " Appearance
 set number
-set laststatus=2
 set cursorline
 set lazyredraw
 set showmatch
-let g:indentLine_leadingSpaceEnabled = 1
-let g:indentLine_leadingSpaceChar = "·"
+set matchtime=1
+set display=lastline
+set breakindent
+set showbreak=>
+set breakindentopt=shift:4,sbr
+set emoji
 
 " Searching
 set hlsearch
@@ -72,9 +75,15 @@ endif
 
 
 " Powerline
+set laststatus=2
 python3 from powerline.vim import setup as powerline_setup
 python3 powerline_setup()
 python3 del powerline_setup
+
+
+" indentLine
+let g:indentLine_leadingSpaceEnabled = 1
+let g:indentLine_leadingSpaceChar = '·'
 
 
 " HEX editor

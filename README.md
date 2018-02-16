@@ -10,6 +10,7 @@ My dotfiles for macOS, Linux, or Windows Subsystem for Linux.
 - Python 3
 - ag
 - git
+- peco
 - `pip3 install powerline-status`
 - `pip3 install neovim`
 - `pip3 install psutil`

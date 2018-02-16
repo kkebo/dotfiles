@@ -4,6 +4,12 @@ My dotfiles for macOS, Linux, or Windows Subsystem for Linux.
 
 ## Prerequisites
 
+- fish
+- tmux
+- vim
+- Python 3
+- ag
+- git
 - `pip3 install powerline-status`
 - `pip3 install neovim`
 - `pip3 install psutil`

@@ -20,10 +20,6 @@ hook_post_update = '''
 repo = 'jpo/vim-railscasts-theme'
 
 [[plugins]]
-repo = 'powerline/powerline'
-rtp = 'powerline/bindings/vim/'
-
-[[plugins]]
 repo = 'terryma/vim-multiple-cursors'
 
 [[plugins]]

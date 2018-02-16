@@ -46,6 +46,8 @@ set laststatus=2
 set cursorline
 set lazyredraw
 set showmatch
+let g:indentLine_leadingSpaceEnabled = 1
+let g:indentLine_leadingSpaceChar = "·"
 
 " Searching
 set hlsearch

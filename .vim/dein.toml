@@ -20,6 +20,9 @@ hook_post_update = '''
 repo = 'jpo/vim-railscasts-theme'
 
 [[plugins]]
+repo = 'Yggdroot/indentLine'
+
+[[plugins]]
 repo = 'terryma/vim-multiple-cursors'
 
 [[plugins]]

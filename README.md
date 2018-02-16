@@ -7,6 +7,7 @@ My dotfiles for macOS, Linux, or Windows Subsystem for Linux.
 - `pip3 install powerline-status`
 - `pip3 install neovim`
 - `pip3 install psutil`
+- (macOS) `brew install terminal-notifier`
 
 ## Contents
 

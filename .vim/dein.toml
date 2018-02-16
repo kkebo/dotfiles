@@ -44,3 +44,6 @@ depends = ['deoplete.nvim']
 
 [[plugins]]
 repo = 'airblade/vim-gitgutter'
+
+[[plugins]]
+repo = 'cespare/vim-toml'

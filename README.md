@@ -2,6 +2,12 @@
 
 My dotfiles for macOS, Linux, or Windows Subsystem for Linux.
 
+## Prerequisites
+
+- `pip3 install powerline-status`
+- `pip3 install neovim`
+- `pip3 install psutil`
+
 ## Contents
 
 ### vim (for 8.0 or higher with Python 3 supports)

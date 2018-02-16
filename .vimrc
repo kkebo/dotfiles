@@ -51,7 +51,7 @@ set breakindent
 set showbreak=>
 set breakindentopt=shift:4,sbr
 set list
-set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
+set listchars=tab:»-,eol:↲,extends:»,precedes:«,nbsp:%
 set emoji
 set showtabline=2
 

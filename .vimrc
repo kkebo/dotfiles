@@ -51,6 +51,10 @@ set breakindent
 set showbreak=>
 set breakindentopt=shift:4,sbr
 set emoji
+set showtabline=2
+
+" Clipboard
+set clipboard=unnamed,unnamedplus
 
 " Searching
 set hlsearch

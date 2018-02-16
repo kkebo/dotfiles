@@ -36,9 +36,10 @@ if dein#check_install()
 endif
 
 
-" 一般設定
-syntax enable
+source $VIMRUNTIME/defaults.vim
 
+
+" 一般設定
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
@@ -46,17 +47,12 @@ set expandtab
 set autoindent
 set smartindent
 
-filetype plugin indent on
-
 set number
-set showcmd
 set laststatus=2
 set cursorline
-set wildmenu
 set lazyredraw
 set showmatch
 
-set incsearch
 set hlsearch
 nnoremap <leader><space> :nohlsearch<CR>
 
@@ -65,8 +61,6 @@ set foldlevelstart=10
 set foldnestmax=10
 nnoremap <space> za
 set foldmethod=indent
-
-set backspace=indent,eol,start
 
 
 " Python executable

@@ -102,3 +102,7 @@ augroup BinaryXXD
     autocmd BufWritePost * if &binary | silent %!xxd -g 1
     autocmd BufWritePost * set nomod | endif
 augroup END
+
+
+" Emmet
+imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")

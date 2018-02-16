@@ -69,6 +69,12 @@ set foldnestmax=10
 nnoremap <space> za
 set foldmethod=indent
 
+" Undo
+if has('persistent_undo')
+    set undofile
+    set undodir=$HOME/.vim/undo
+endif
+
 
 " Python executable
 if filereadable('/usr/bin/python3')

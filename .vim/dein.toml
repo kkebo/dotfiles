@@ -17,9 +17,6 @@ hook_post_update = '''
 '''
 
 [[plugins]]
-repo = 'jpo/vim-railscasts-theme'
-
-[[plugins]]
 repo = 'Yggdroot/indentLine'
 
 [[plugins]]

@@ -86,13 +86,6 @@ else
 endif
 
 
-" Powerline
-set laststatus=2
-python3 from powerline.vim import setup as powerline_setup
-python3 powerline_setup()
-python3 del powerline_setup
-
-
 " indentLine
 let g:indentLine_leadingSpaceEnabled = 1
 let g:indentLine_leadingSpaceChar = '·'
@@ -117,3 +110,8 @@ imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 " vim-gitgutter
 let g:gitgutter_grep = 'ag'
 set updatetime=100
+
+
+" vim-airline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1

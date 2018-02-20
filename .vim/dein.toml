@@ -47,3 +47,6 @@ repo = 'cespare/vim-toml'
 
 [[plugins]]
 repo = 'ntpeters/vim-better-whitespace'
+
+[[plugins]]
+repo = 'vim-airline/vim-airline'

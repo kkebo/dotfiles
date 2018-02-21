@@ -34,6 +34,9 @@ repo = 'airblade/vim-gitgutter'
 repo = 'cespare/vim-toml'
 
 [[plugins]]
+repo = 'dag/vim-fish'
+
+[[plugins]]
 repo = 'ntpeters/vim-better-whitespace'
 
 [[plugins]]

@@ -106,10 +106,6 @@ augroup BinaryXXD
 augroup END
 
 
-" Emmet
-imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
-
-
 " vim-gitgutter
 let g:gitgutter_grep = 'ag'
 set updatetime=100

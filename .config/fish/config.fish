@@ -46,7 +46,7 @@ end
 
 # bobthefish
 set -g theme_nerd_fonts yes
-set -g theme_color_scheme terminal
+set -g theme_color_scheme default
 set -x VIRTUAL_ENV_DISABLE_PROMPT 1
 
 # done

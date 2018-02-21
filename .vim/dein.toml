@@ -41,3 +41,6 @@ repo = 'ntpeters/vim-better-whitespace'
 
 [[plugins]]
 repo = 'vim-airline/vim-airline'
+
+[[plugins]]
+repo = 'tpope/vim-fugitive'

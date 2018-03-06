@@ -44,3 +44,9 @@ repo = 'vim-airline/vim-airline'
 
 [[plugins]]
 repo = 'tpope/vim-fugitive'
+
+[[plugins]]
+repo = 'tpope/vim-commentary'
+
+[[plugins]]
+repo = 'leafgarland/typescript-vim'

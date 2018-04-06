@@ -1,24 +1,48 @@
 {
-    "files.autoSave": "afterDelay",
+    "editor.fontFamily": "SFMono Nerd Font",
+    "editor.insertSpaces": true,
     "editor.renderWhitespace": "boundary",
-    "files.autoSaveDelay": 1000,
-    "editor.insertSpaces": false,
     "editor.tabSize": 4,
-    "files.eol": "\n",
-    "editor.fontFamily": "SF Mono",
-    "window.nativeTabs": true,
 
-    "workbench.colorTheme": "RailsCasts",
+    "files.associations": {
+        "*.es": "javascript"
+    },
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "files.eol": "\n",
+
+    "git.autofetch": true,
+    "git.confirmSync": false,
+
+    "terminal.external.windowsExec": "c:\\windows\\sysnative\\bash.exe",
+    "terminal.integrated.shell.windows": "c:\\windows\\sysnative\\bash.exe",
+
+    "workbench.activityBar.visible": true,
+    "workbench.colorTheme": "Material Theme",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.panel.location": "right",
     "workbench.sideBar.location": "left",
 
-    "terminal.external.windowsExec": "c:\\windows\\sysnative\\bash.exe -c /usr/sbin/zsh",
-    "terminal.integrated.shell.windows": "c:\\windows\\sysnative\\bash.exe",
-    "terminal.integrated.shellArgs.windows": [
-        "-c",
-        "/usr/sbin/zsh"
-    ],
-    "git.confirmSync": false,
-    "workbench.activityBar.visible": true,
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true
+    },
+    "gitlens.gitExplorer.files.layout": "auto",
+    "gitlens.keymap": "alternate",
+
+    "materialTheme.cache.workbench.settings": {
+        "themeColours": "Darker"
+    },
+
+    "mdmath.delimiters": "gitlab",
+
     "python.pythonPath": "python3",
-    "workbench.panel.location": "right"
+
+    "typescript.experimental.syntaxFolding": true
 }

@@ -6,3 +6,7 @@ on_ft = ['html', 'css', 'sass', 'php']
 repo = 'zchee/deoplete-jedi'
 depends = ['deoplete.nvim']
 on_ft = ['python']
+
+[[plugins]]
+repo = 'Vimjas/vim-python-pep8-indent'
+on_ft = ['python']

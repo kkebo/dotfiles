@@ -42,6 +42,8 @@
 
     "mdmath.delimiters": "gitlab",
 
+    "npm.enableScriptExplorer": true,
+
     "python.pythonPath": "python3",
 
     "typescript.experimental.syntaxFolding": true

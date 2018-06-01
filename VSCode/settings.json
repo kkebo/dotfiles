@@ -5,7 +5,8 @@
     "editor.tabSize": 4,
 
     "files.associations": {
-        "*.es": "javascript"
+        "*.es": "javascript",
+        ".gpmrc": "json"
     },
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 1000,
@@ -16,11 +17,12 @@
 
     "terminal.external.windowsExec": "c:\\windows\\sysnative\\bash.exe",
     "terminal.integrated.shell.windows": "c:\\windows\\sysnative\\bash.exe",
+    "terminal.integrated.shell.linux": "/usr/bin/fish",
 
     "workbench.activityBar.visible": true,
-    "workbench.colorTheme": "Material Theme",
+    "workbench.colorTheme": "Material Theme Darker",
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.panel.location": "right",
+    "workbench.panel.defaultLocation": "right",
     "workbench.sideBar.location": "left",
 
     "gitlens.advanced.messages": {
@@ -35,10 +37,6 @@
     },
     "gitlens.gitExplorer.files.layout": "auto",
     "gitlens.keymap": "alternate",
-
-    "materialTheme.cache.workbench.settings": {
-        "themeColours": "Darker"
-    },
 
     "mdmath.delimiters": "gitlab",
 

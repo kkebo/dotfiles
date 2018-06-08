@@ -1,4 +1,6 @@
 {
+    "debug.toolBarLocation": "docked",
+
     "editor.fontFamily": "SFMono Nerd Font",
     "editor.insertSpaces": true,
     "editor.renderWhitespace": "boundary",

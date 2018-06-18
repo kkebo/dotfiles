@@ -44,6 +44,8 @@
 
     "npm.enableScriptExplorer": true,
 
+    "python.linting.flake8Enabled": true,
+    "python.linting.mypyEnabled": true,
     "python.pythonPath": "python3",
 
     "typescript.experimental.syntaxFolding": true

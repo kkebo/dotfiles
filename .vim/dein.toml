@@ -50,3 +50,6 @@ repo = 'tpope/vim-commentary'
 
 [[plugins]]
 repo = 'leafgarland/typescript-vim'
+
+[[plugins]]
+repo = 'scrooloose/nerdtree'

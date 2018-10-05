@@ -57,3 +57,6 @@ repo = 'scrooloose/nerdtree'
 [[plugins]]
 repo = 'Xuyuanp/nerdtree-git-plugin'
 depends = ['nerdtree']
+
+[[plugins]]
+repo = 'w0rp/ale'

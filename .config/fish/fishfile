@@ -7,6 +7,7 @@ fisherman/done
 fisherman/getopts
 fisherman/gitignore
 fisherman/humanize_duration
+fisherman/imgcat
 oh-my-fish/plugin-peco
 laughedelic/pisces
 fisherman/spin

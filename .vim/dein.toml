@@ -60,3 +60,9 @@ depends = ['nerdtree']
 
 [[plugins]]
 repo = 'w0rp/ale'
+
+[[plugins]]
+repo = 'vim-syntastic/syntastic'
+
+[[plugins]]
+repo = 'keith/swift.vim'

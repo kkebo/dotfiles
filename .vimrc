@@ -107,7 +107,7 @@ augroup END
 
 
 " vim-gitgutter
-let g:gitgutter_grep = 'ag'
+let g:gitgutter_grep = 'rg'
 set updatetime=100
 
 

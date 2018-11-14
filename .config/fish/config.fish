@@ -3,6 +3,8 @@ set -x PATH /bin /sbin /usr/local/bin /usr/local/sbin /usr/bin /usr/sbin $PATH
 set -x EDITOR vim
 set -x LANG en_US.UTF-8
 
+alias view="vim -RM"
+
 # For WSL
 if uname -r | string match -r 'Microsoft$'
 	set -x LIBGL_ALWAYS_INDIRECT 1

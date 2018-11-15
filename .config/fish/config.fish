@@ -1,9 +1,19 @@
 umask 022
 set -x PATH /bin /sbin /usr/local/bin /usr/local/sbin /usr/bin /usr/sbin $PATH
-set -x EDITOR vim
 set -x LANG en_US.UTF-8
 
-alias view="vim -RM"
+# Preferences
+if test -q vim
+    set -x EDITOR vim
+    alias view="vim -RM"
+    alias vi="vim"
+end
+if test -q bat
+    alias cat="bat"
+end
+if test -q rg
+    alias grep="rg"
+end
 
 # For WSL
 if uname -r | string match -r 'Microsoft$'

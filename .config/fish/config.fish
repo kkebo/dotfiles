@@ -3,15 +3,15 @@ set -x PATH /bin /sbin /usr/local/bin /usr/local/sbin /usr/bin /usr/sbin $PATH
 set -x LANG en_US.UTF-8
 
 # Preferences
-if test -q vim
+if type -q vim
     set -x EDITOR vim
     alias view="vim -RM"
     alias vi="vim"
 end
-if test -q bat
+if type -q bat
     alias cat="bat"
 end
-if test -q rg
+if type -q rg
     alias grep="rg"
 end
 

@@ -24,6 +24,10 @@ if dein#load_state(s:dein_dir)
     call dein#save_state()
 endif
 
+if dein#check_install(['vimproc'])
+    call dein#install(['vimproc'])
+endif
+
 if dein#check_install()
     call dein#install()
 endif
@@ -41,12 +45,12 @@ set autoindent
 set smartindent
 
 " Appearance
-if !has('gui_running')
+if has('termguicolors')
     set termguicolors
-end
+endif
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-colorscheme wwdc16
+colorscheme material
 set background=dark
 set number
 set cursorline
@@ -57,7 +61,9 @@ set display=lastline
 set breakindent
 set showbreak=>
 set breakindentopt=shift:4,sbr
-set emoji
+if has('emoji')
+    set emoji
+endif
 set showtabline=2
 
 " Clipboard
@@ -80,15 +86,17 @@ if has('persistent_undo')
     set undodir=$HOME/.vim/undo
 endif
 
+" Window Navigation
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
-" Python executable
-if filereadable('/usr/bin/python3')
-    let g:python3_host_prog = '/usr/bin/python3'
-elseif filereadable('/usr/local/bin/python3')
-    let g:python3_host_prog = '/usr/local/bin/python3'
-else
-    let g:python3_host_prog = '/usr/bin/env python3'
-endif
+" Move cursor by display lines
+nnoremap j gj
+nnoremap k gk
+vnoremap j gj
+vnoremap k gk
 
 
 " indentLine
@@ -118,6 +126,7 @@ set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline_skip_empty_sections = 1
+let g:airline_theme = 'material'
 
 " swift.vim
 let g:syntastic_swift_checkers = ['swiftpm', 'swiftlint']

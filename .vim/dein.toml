@@ -2,30 +2,17 @@
 repo = 'Shougo/dein.vim'
 
 [[plugins]]
-repo = 'lifepillar/vim-wwdc16-theme'
+repo = 'Shougo/vimproc.vim'
+build = 'make'
+
+[[plugins]]
+repo = 'kaicataldo/material.vim'
 
 [[plugins]]
 repo = 'Yggdroot/indentLine'
 
 [[plugins]]
 repo = 'terryma/vim-multiple-cursors'
-
-[[plugins]]
-repo = 'Shougo/deoplete.nvim'
-depends = ['nvim-yarp', 'vim-hug-neovim-rpc']
-hook_add = 'let g:deoplete#enable_at_startup = 1'
-
-[[plugins]]
-repo = 'roxma/nvim-yarp'
-if = '''!has('nvim')'''
-
-[[plugins]]
-repo = 'roxma/vim-hug-neovim-rpc'
-if = '''!has('nvim')'''
-
-[[plugins]]
-repo = 'Shougo/neco-vim'
-depends = ['deoplete.nvim']
 
 [[plugins]]
 repo = 'airblade/vim-gitgutter'
@@ -46,16 +33,7 @@ repo = 'vim-airline/vim-airline'
 repo = 'tpope/vim-fugitive'
 
 [[plugins]]
-repo = 'tomtom/tcomment_vim'
-
-[[plugins]]
 repo = 'leafgarland/typescript-vim'
-
-[[plugins]]
-repo = 'scrooloose/nerdtree'
-hook_source = '''
-    let g:NERDTreeShowHidden = 1
-'''
 
 [[plugins]]
 repo = 'Xuyuanp/nerdtree-git-plugin'

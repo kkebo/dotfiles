@@ -85,3 +85,6 @@ hook_add = 'let g:NERDTreeShowHidden = 1'
 
 [[plugins]]
 repo = 'tomtom/tcomment_vim'
+
+[[plugins]]
+repo = 'majutsushi/tagbar'

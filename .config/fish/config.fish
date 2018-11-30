@@ -5,6 +5,7 @@ set -x LANG en_US.UTF-8
 # Preferences
 if type -q vim
     set -x EDITOR vim
+    alias vim="vim -p"
     alias view="vim -RM"
     alias vi="vim"
 end

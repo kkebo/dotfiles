@@ -22,7 +22,6 @@ hook_add = '''
 
     let g:airline_theme = 'material'
 '''
-depends = ['vim-airline']
 
 [[plugins]]
 repo = 'Yggdroot/indentLine'
@@ -36,8 +35,11 @@ repo = 'terryma/vim-multiple-cursors'
 
 [[plugins]]
 repo = 'airblade/vim-gitgutter'
+if = '''executable('git')'''
 hook_add = '''
-    let g:gitgutter_grep = 'rg'
+    if executable('rg')
+        let g:gitgutter_grep = 'rg'
+    endif
     set updatetime=100
 '''
 
@@ -58,9 +60,11 @@ hook_add = '''
     let g:airline_powerline_fonts = 1
     let g:airline_skip_empty_sections = 1
 '''
+depends = ['material']
 
 [[plugins]]
 repo = 'tpope/vim-fugitive'
+if = '''executable('git')'''
 
 [[plugins]]
 repo = 'leafgarland/typescript-vim'

@@ -4,12 +4,6 @@ on_ft = ['html', 'css', 'sass', 'php']
 on_i = 1
 
 [[plugins]]
-repo = 'zchee/deoplete-jedi'
-depends = ['deoplete.nvim']
-on_ft = ['python']
-on_i = 1
-
-[[plugins]]
 repo = 'Vimjas/vim-python-pep8-indent'
 on_ft = ['python']
 on_i = 1
@@ -28,9 +22,4 @@ on_i = 1
 [[plugins]]
 repo = 'roxma/vim-hug-neovim-rpc'
 if = '''!has('nvim') && executable('python3') && has('python3')'''
-on_i = 1
-
-[[plugins]]
-repo = 'Shougo/neco-vim'
-depends = ['deoplete.nvim']
 on_i = 1

@@ -34,20 +34,3 @@ on_i = 1
 repo = 'Shougo/neco-vim'
 depends = ['deoplete.nvim']
 on_i = 1
-
-[[plugins]]
-repo = 'racer-rust/vim-racer'
-on_ft = 'rust'
-on_i = 1
-hook_source = '''
-    set hidden
-    let g:racer_experimental_completer = 1
-    au FileType rust nmap gd <Plug>(rust-def)
-    au FileType rust nmap gs <Plug>(rust-def-split)
-    au FileType rust nmap gx <Plug>(rust-def-vertical)
-    au FileType rust nmap <leader>gd <Plug>(rust-doc)
-'''
-
-[[plugins]]
-repo = 'rust-lang/rust.vim'
-on_ft = 'rust'

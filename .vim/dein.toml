@@ -88,3 +88,6 @@ repo = 'tomtom/tcomment_vim'
 
 [[plugins]]
 repo = 'majutsushi/tagbar'
+
+[[plugins]]
+repo = 'chiphogg/vim-prototxt'

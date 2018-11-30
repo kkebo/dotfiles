@@ -95,3 +95,12 @@ repo = 'chiphogg/vim-prototxt'
 [[plugins]]
 repo = 'luochen1990/rainbow'
 hook_add = 'let g:rainbow_active = 1'
+
+[[plugins]]
+repo = 'jistr/vim-nerdtree-tabs'
+depends = 'nerdtree'
+hook_add = '''
+    map <Leader>n <plug>NERDTreeTabsTogglee<CR>
+    let g:nerdtree_tabs_open_on_console_startup = 1
+    let g:nerdtree_tabs_autofind = 1
+'''

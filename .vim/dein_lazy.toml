@@ -40,12 +40,12 @@ on_i = 1
 
 [[plugins]]
 repo = 'roxma/nvim-yarp'
-if = '!has('nvim')'
+if = '''!has('nvim')'''
 on_i = 1
 
 [[plugins]]
 repo = 'roxma/vim-hug-neovim-rpc'
-if = '!has('nvim')'
+if = '''!has('nvim')'''
 on_i = 1
 
 [[plugins]]

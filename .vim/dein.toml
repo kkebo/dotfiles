@@ -7,15 +7,38 @@ build = 'make'
 
 [[plugins]]
 repo = 'kaicataldo/material.vim'
+hook_add = '''
+    if has('termguicolors')
+        set termguicolors
+    endif
+
+    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+
+    set background=dark
+    colorscheme material
+    let g:material_theme_style = 'dark'
+
+    let g:airline_theme = 'material'
+'''
+depends = ['vim-airline']
 
 [[plugins]]
 repo = 'Yggdroot/indentLine'
+hook_add = '''
+    let g:indentLine_leadingSpaceEnabled = 1
+    let g:indentLine_leadingSpaceChar = '·'
+'''
 
 [[plugins]]
 repo = 'terryma/vim-multiple-cursors'
 
 [[plugins]]
 repo = 'airblade/vim-gitgutter'
+hook_add = '''
+    let g:gitgutter_grep = 'rg'
+    set updatetime=100
+'''
 
 [[plugins]]
 repo = 'cespare/vim-toml'
@@ -28,6 +51,12 @@ repo = 'ntpeters/vim-better-whitespace'
 
 [[plugins]]
 repo = 'vim-airline/vim-airline'
+hook_add = '''
+    set laststatus=2
+    let g:airline#extensions#tabline#enabled = 1
+    let g:airline_powerline_fonts = 1
+    let g:airline_skip_empty_sections = 1
+'''
 
 [[plugins]]
 repo = 'tpope/vim-fugitive'
@@ -47,3 +76,8 @@ repo = 'vim-syntastic/syntastic'
 
 [[plugins]]
 repo = 'keith/swift.vim'
+hook_add = '''let g:syntastic_swift_checkers = ['swiftpm', 'swiftlint']'''
+
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+hook_add = 'let g:NERDTreeShowHidden = 1'

@@ -45,13 +45,6 @@ set autoindent
 set smartindent
 
 " Appearance
-if has('termguicolors')
-    set termguicolors
-endif
-let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-colorscheme material
-set background=dark
 set number
 set cursorline
 set lazyredraw
@@ -98,12 +91,6 @@ nnoremap k gk
 vnoremap j gj
 vnoremap k gk
 
-
-" indentLine
-let g:indentLine_leadingSpaceEnabled = 1
-let g:indentLine_leadingSpaceChar = '·'
-
-
 " HEX editor
 augroup BinaryXXD
     autocmd!
@@ -114,19 +101,3 @@ augroup BinaryXXD
     autocmd BufWritePost * if &binary | silent %!xxd -g 1
     autocmd BufWritePost * set nomod | endif
 augroup END
-
-
-" vim-gitgutter
-let g:gitgutter_grep = 'rg'
-set updatetime=100
-
-
-" vim-airline
-set laststatus=2
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 1
-let g:airline_skip_empty_sections = 1
-let g:airline_theme = 'material'
-
-" swift.vim
-let g:syntastic_swift_checkers = ['swiftpm', 'swiftlint']

@@ -91,3 +91,7 @@ repo = 'majutsushi/tagbar'
 
 [[plugins]]
 repo = 'chiphogg/vim-prototxt'
+
+[[plugins]]
+repo = 'luochen1990/rainbow'
+hook_add = 'let g:rainbow_active = 1'

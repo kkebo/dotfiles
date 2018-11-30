@@ -15,10 +15,6 @@ on_ft = ['python']
 on_i = 1
 
 [[plugins]]
-repo = 'tomtom/tcomment_vim'
-on_i = 1
-
-[[plugins]]
 repo = 'Shougo/deoplete.nvim'
 depends = ['nvim-yarp', 'vim-hug-neovim-rpc']
 hook_source = '''

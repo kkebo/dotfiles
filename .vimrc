@@ -106,7 +106,11 @@ augroup END
 
 " Python
 if has('mac')
-    let $PYTHONPATH .= system('/usr/local/bin/python3 -c "import sys; print(\":\".join(sys.path))"')
+    if executable('/usr/local/bin/python3')
+        let $PYTHONPATH .= system('/usr/local/bin/python3 -c "import sys; print(\":\".join(sys.path))"')
+    endif
 elseif has('unix')
-    let $PYTHONPATH .= system('/usr/bin/python3 -c "import sys; print(\":\".join(sys.path))"')
+    if executable('/usr/bin/python3')
+        let $PYTHONPATH .= system('/usr/bin/python3 -c "import sys; print(\":\".join(sys.path))"')
+    endif
 endif

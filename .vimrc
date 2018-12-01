@@ -103,3 +103,10 @@ augroup BinaryXXD
     autocmd BufWritePost * if &binary | silent %!xxd -g 1
     autocmd BufWritePost * set nomod | endif
 augroup END
+
+" Python
+if has('mac')
+    let $PYTHONPATH .= system('/usr/local/bin/python3 -c "import sys; print(\":\".join(sys.path))"')
+elseif has('unix')
+    let $PYTHONPATH .= system('/usr/bin/python3 -c "import sys; print(\":\".join(sys.path))"')
+endif

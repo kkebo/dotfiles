@@ -34,7 +34,9 @@ endif
 
 
 " Default settings
-source $VIMRUNTIME/defaults.vim
+if !has('nvim')
+    source $VIMRUNTIME/defaults.vim
+endif
 
 " Indentation
 set tabstop=4

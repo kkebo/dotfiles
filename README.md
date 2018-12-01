@@ -12,6 +12,7 @@ My dotfiles for macOS, Linux, or Windows Subsystem for Linux.
 - bat
 - rustup, rls, and racer
 - git
+- fzf
 - peco
 - `pip3 install powerline-status`
 - `pip3 install pynvim`

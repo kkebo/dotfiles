@@ -6,19 +6,22 @@ My dotfiles for macOS, Linux, or Windows Subsystem for Linux.
 
 - fish
 - tmux
-- vim
+- vim 8 or later
 - Python 3
-- ag
+- ripgrep
+- bat
+- rustup, rls, and racer
 - git
 - peco
 - `pip3 install powerline-status`
-- `pip3 install neovim`
+- `pip3 install pynvim`
 - `pip3 install psutil`
+- `pip3 install python-language-server`
 - (macOS) `brew install terminal-notifier`
 
 ## Contents
 
-### vim (for 8.0 or higher with Python 3 supports)
+### vim (for 8.0 or later with Python 3 support)
 
 - `.vimrc`
 - `.vim/*`
@@ -26,12 +29,13 @@ My dotfiles for macOS, Linux, or Windows Subsystem for Linux.
 ### fish
 
 - `.config/fish/config.fish`
+- `.config/fish/fishfile`
 
 ### tmux
 
 - `.tmux.conf`
 
-### pip (for pip 9.0 or higher)
+### pip (for pip 9.0 or later)
 
 - `.pip/*`
 
@@ -56,8 +60,7 @@ ln -s $HOME/dotfiles/.vimrc .
 ln -s $HOME/dotfiles/.vim .
 
 # Install fish configuration
-mkdir -p .config/fish
-ln -s $HOME/dotfiles/.config/fish/config.fish .config/fish/
+ln -s $HOME/dotfiles/.config/fish .config/
 
 # Install tmux configuration
 ln -s $HOME/dotfiles/.tmux.conf .

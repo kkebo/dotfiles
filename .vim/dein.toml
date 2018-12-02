@@ -109,13 +109,16 @@ hook_add = '''
     set signcolumn=yes
 
     let g:LanguageClient_serverCommands = {}
-    if executable('rls')
-        let g:LanguageClient_serverCommands['rust'] = ['~/.cargo/bin/rustup', 'run', 'nightly', 'rls']
+    if executable('rustup')
+        let g:LanguageClient_serverCommands['rust'] = [expand('rustup'), 'run', 'nightly', 'rls']
     endif
     if executable('pyls')
-        let g:LanguageClient_serverCommands['python'] = ['/usr/local/bin/pyls']
+        let g:LanguageClient_serverCommands['python'] = [expand('pyls')]
     endif
-    if executable('/usr/local/opt/llvm/bin/clangd')
+    if executable('clangd')
+        let g:LanguageClient_serverCommands['c'] = [expand('clangd')]
+        let g:LanguageClient_serverCommands['cpp'] = [expand('clangd')]
+    elseif has('mac') && executable('/usr/local/opt/llvm/bin/clangd')
         let g:LanguageClient_serverCommands['c'] = ['/usr/local/opt/llvm/bin/clangd']
         let g:LanguageClient_serverCommands['cpp'] = ['/usr/local/opt/llvm/bin/clangd']
     endif

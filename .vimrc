@@ -81,6 +81,13 @@ if has('persistent_undo')
     set undodir=$HOME/.vim/undo
 endif
 
+" autoread
+set autoread
+augroup vimrc-checktime
+    autocmd!
+    autocmd CursorMoved * checktime
+augroup END
+
 " Window Navigation
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j

@@ -15,6 +15,9 @@ end
 if type -q rg
     alias grep="rg"
 end
+if type -q exa
+    alias ls="exa"
+end
 
 # For WSL
 if uname -r | string match -r 'Microsoft$'

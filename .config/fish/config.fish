@@ -15,8 +15,11 @@ end
 if type -q rg
     alias grep="rg"
 end
-if type -q exa
-    alias ls="exa"
+if type -q lsd
+    alias ls="lsd"
+    alias ll="ls -l"
+    alias la="ls -la"
+    alias lt="ls --tree"
 end
 
 # For WSL

@@ -2,26 +2,6 @@ umask 022
 set -x PATH /bin /sbin /usr/local/bin /usr/local/sbin /usr/bin /usr/sbin $PATH
 set -x LANG en_US.UTF-8
 
-# Preferences
-if type -q vim
-    set -x EDITOR vim
-    alias vim="vim -p"
-    alias view="vim -RM"
-    alias vi="vim"
-end
-if type -q bat
-    alias cat="bat"
-end
-if type -q rg
-    alias grep="rg"
-end
-if type -q lsd
-    alias ls="lsd"
-    alias ll="ls -l"
-    alias la="ls -la"
-    alias lt="ls --tree"
-end
-
 # For WSL
 if uname -r | string match -r 'Microsoft$'
 	set -x LIBGL_ALWAYS_INDIRECT 1
@@ -76,4 +56,24 @@ set DIR (dirname (status --current-filename))
 for file in $DIR/include/*.fish
     echo $file
     . $file
+end
+
+# Preferences
+if type -q vim
+    set -x EDITOR vim
+    alias vim="vim -p"
+    alias view="vim -RM"
+    alias vi="vim"
+end
+if type -q bat
+    alias cat="bat"
+end
+if type -q rg
+    alias grep="rg"
+end
+if type -q lsd
+    alias ls="lsd"
+    alias ll="ls -l"
+    alias la="ls -la"
+    alias lt="ls --tree"
 end

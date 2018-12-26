@@ -83,6 +83,9 @@ hook_add = 'let g:NERDTreeShowHidden = 1'
 
 [[plugins]]
 repo = 'tomtom/tcomment_vim'
+hook_add = '''
+    call tcomment#type#Define('prototxt', '# %s')
+'''
 
 [[plugins]]
 repo = 'chiphogg/vim-prototxt'

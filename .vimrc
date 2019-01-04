@@ -100,6 +100,10 @@ nnoremap k gk
 vnoremap j gj
 vnoremap k gk
 
+" Buffer
+nnoremap <silent> <C-j> :bprev<CR>
+nnoremap <silent> <C-k> :bnext<CR>
+
 " HEX editor
 augroup BinaryXXD
     autocmd!

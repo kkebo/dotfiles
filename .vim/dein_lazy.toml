@@ -12,7 +12,7 @@ on_i = 1
 repo = 'Shougo/deoplete.nvim'
 if = '''executable('python3') && has('python3')'''
 on_i = 1
-hook_source = 'source deoplete_nvim.vim'
+hook_source = '''exec 'source ' . g:rc_dir . '/deoplete_nvim.vim' '''
 
 [[plugins]]
 repo = 'roxma/nvim-yarp'

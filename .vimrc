@@ -1,7 +1,32 @@
 if has('ios')
     " iVim
     " Pathogen
+    let s:pathogen_dir = expand('~/bundle')
+    let g:rc_dir = expand('~/.vim')
+
     execute pathogen#infect('~/bundle/{}')
+
+    if globpath(s:pathogen_dir, 'indentLine', 1) !=# ''
+        exec 'source ' . g:rc_dir . '/indentLine.vim'
+    endif
+    if globpath(s:pathogen_dir, 'material.vim', 1) !=# ''
+        exec 'source ' . g:rc_dir . '/material_vim.vim'
+    endif
+    if globpath(s:pathogen_dir, 'nerdtree', 1) !=# ''
+        exec 'source ' . g:rc_dir . '/nerdtree.vim'
+    endif
+    if globpath(s:pathogen_dir, 'rainbow', 1) !=# ''
+        exec 'source ' . g:rc_dir . '/rainbow.vim'
+    endif
+    if globpath(s:pathogen_dir, 'swift.vim', 1) !=# ''
+        exec 'source ' . g:rc_dir . '/swift_vim.vim'
+    endif
+    if globpath(s:pathogen_dir, 'tcomment_vim', 1) !=# ''
+        exec 'source ' . g:rc_dir . '/tcomment_vim.vim'
+    endif
+    if globpath(s:pathogen_dir, 'vim-airline', 1) !=# ''
+        exec 'source ' . g:rc_dir . '/vim-airline.vim'
+    endif
 
     " Default settings
     set nocompatible
@@ -27,13 +52,13 @@ else
 
     if dein#load_state(s:dein_dir)
         call dein#begin(s:dein_dir)
-    
+
         let s:toml      = g:rc_dir . '/dein.toml'
         let s:lazy_toml = g:rc_dir . '/dein_lazy.toml'
-    
+
         call dein#load_toml(s:toml,      {'lazy': 0})
         call dein#load_toml(s:lazy_toml, {'lazy': 1})
-    
+
         call dein#end()
         call dein#save_state()
     endif

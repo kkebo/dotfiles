@@ -7,28 +7,11 @@ build = 'make'
 
 [[plugins]]
 repo = 'kaicataldo/material.vim'
-hook_add = '''
-    if has('termguicolors')
-        set termguicolors
-    endif
-
-    " 24-bit color
-    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-
-    let g:material_theme_style = 'dark'
-    set background=dark
-    colorscheme material
-
-    let g:airline_theme = 'material'
-'''
+hook_add = 'source material_vim.vim'
 
 [[plugins]]
 repo = 'Yggdroot/indentLine'
-hook_add = '''
-    let g:indentLine_leadingSpaceEnabled = 1
-    let g:indentLine_leadingSpaceChar = '·'
-'''
+hook_add = 'source indnetLine.vim'
 
 [[plugins]]
 repo = 'terryma/vim-multiple-cursors'
@@ -36,12 +19,7 @@ repo = 'terryma/vim-multiple-cursors'
 [[plugins]]
 repo = 'airblade/vim-gitgutter'
 if = '''executable('git')'''
-hook_add = '''
-    if executable('rg')
-        let g:gitgutter_grep = 'rg'
-    endif
-    set updatetime=100
-'''
+hook_add = 'source vim-gitgutter.vim'
 
 [[plugins]]
 repo = 'cespare/vim-toml'
@@ -54,12 +32,7 @@ repo = 'ntpeters/vim-better-whitespace'
 
 [[plugins]]
 repo = 'vim-airline/vim-airline'
-hook_add = '''
-    set laststatus=2
-    let g:airline#extensions#tabline#enabled = 1
-    let g:airline_powerline_fonts = 1
-    let g:airline_skip_empty_sections = 1
-'''
+hook_add = 'source vim-airline.vim'
 depends = ['material']
 
 [[plugins]]
@@ -75,62 +48,28 @@ depends = ['nerdtree']
 
 [[plugins]]
 repo = 'keith/swift.vim'
-hook_add = '''let g:syntastic_swift_checkers = ['swiftpm', 'swiftlint']'''
+hook_add = 'source swift_vim.vim'
 
 [[plugins]]
 repo = 'scrooloose/nerdtree'
-hook_add = '''
-    let g:NERDTreeShowHidden = 1
-
-    autocmd vimenter * NERDTree
-    autocmd VimEnter * wincmd p
-    autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
-    nnoremap <leader>w :bp<cr>:bd #<cr>
-'''
+hook_add = 'source nerdtree.vim'
 
 [[plugins]]
 repo = 'tomtom/tcomment_vim'
-hook_add = '''
-    call tcomment#type#Define('prototxt', '# %s')
-'''
+hook_add = 'source tcomment_vim.vim'
 
 [[plugins]]
 repo = 'chiphogg/vim-prototxt'
 
 [[plugins]]
 repo = 'luochen1990/rainbow'
-hook_add = 'let g:rainbow_active = 1'
+hook_add = 'source rainbow.vim'
 
 [[plugins]]
 repo = 'autozimu/LanguageClient-neovim'
 rev = 'next'
 bulid = 'bash install.sh'
-hook_add = '''
-    set hidden
-    set signcolumn=yes
-
-    let g:LanguageClient_serverCommands = {}
-    if executable('rustup')
-        let g:LanguageClient_serverCommands['rust'] = [expand('rustup'), 'run', 'nightly', 'rls']
-    endif
-    if executable('pyls')
-        let g:LanguageClient_serverCommands['python'] = [expand('pyls')]
-    endif
-    if executable('clangd')
-        let g:LanguageClient_serverCommands['c'] = [expand('clangd')]
-        let g:LanguageClient_serverCommands['cpp'] = [expand('clangd')]
-    elseif has('mac') && executable('/usr/local/opt/llvm/bin/clangd')
-        let g:LanguageClient_serverCommands['c'] = ['/usr/local/opt/llvm/bin/clangd']
-        let g:LanguageClient_serverCommands['cpp'] = ['/usr/local/opt/llvm/bin/clangd']
-    endif
-
-    nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
-    nnoremap <silent> gd :call LanguageClient#textDocument_definition({'gotoCmd': 'split'})<CR>
-    nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
-    nnoremap <F3> :call LanguageClient_textDocument_references()<CR>
-    nnoremap <F5> :call LanguageClient_contextMenu()<CR>
-'''
+hook_add = 'source LanguageClient-neovim'
 
 [[plugins]]
 repo = 'junegunn/fzf'

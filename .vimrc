@@ -1,41 +1,80 @@
-" dein.vim
-let s:dein_dir = expand('~/.cache/dein')
-let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
-let g:rc_dir = expand('~/.vim')
+if has('ios')
+    " iVim
+    " Pathogen
+    let s:pathogen_dir = expand('~/bundle')
+    let g:rc_dir = expand('~/.vim')
 
-" Install dein.vim if it is not downloaded
-if &runtimepath !~# '/dein.vim'
-    if !isdirectory(s:dein_repo_dir)
-        execute '!git clone https://github.com/Shougo/dein.vim' s:dein_repo_dir
+    execute pathogen#infect('~/bundle/{}')
+
+    if globpath(s:pathogen_dir, 'indentLine', 1) !=# ''
+        exec 'source ' . g:rc_dir . '/indentLine.vim'
     endif
-    execute 'set runtimepath^=' . fnamemodify(s:dein_repo_dir, ':p')
-endif
+    if globpath(s:pathogen_dir, 'material.vim', 1) !=# ''
+        exec 'source ' . g:rc_dir . '/material_vim.vim'
+    endif
+    if globpath(s:pathogen_dir, 'nerdtree', 1) !=# ''
+        exec 'source ' . g:rc_dir . '/nerdtree.vim'
+    endif
+    if globpath(s:pathogen_dir, 'rainbow', 1) !=# ''
+        exec 'source ' . g:rc_dir . '/rainbow.vim'
+    endif
+    if globpath(s:pathogen_dir, 'swift.vim', 1) !=# ''
+        exec 'source ' . g:rc_dir . '/swift_vim.vim'
+    endif
+    if globpath(s:pathogen_dir, 'tcomment_vim', 1) !=# ''
+        exec 'source ' . g:rc_dir . '/tcomment_vim.vim'
+    endif
+    if globpath(s:pathogen_dir, 'vim-airline', 1) !=# ''
+        exec 'source ' . g:rc_dir . '/vim-airline.vim'
+    endif
 
-if dein#load_state(s:dein_dir)
-    call dein#begin(s:dein_dir)
+    " Default settings
+    set nocompatible
+    filetype plugin indent on
+    syntax on
+    set showcmd
+    set wildmenu
+    set incsearch
+    set backspace=indent,eol,start
+else
+    " dein.vim
+    let s:dein_dir = expand('~/.cache/dein')
+    let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
+    let g:rc_dir = expand('~/.vim')
 
-    let s:toml      = g:rc_dir . '/dein.toml'
-    let s:lazy_toml = g:rc_dir . '/dein_lazy.toml'
+    " Install dein.vim if it is not downloaded
+    if &runtimepath !~# '/dein.vim'
+        if !isdirectory(s:dein_repo_dir)
+            execute '!git clone https://github.com/Shougo/dein.vim' s:dein_repo_dir
+        endif
+        execute 'set runtimepath^=' . fnamemodify(s:dein_repo_dir, ':p')
+    endif
 
-    call dein#load_toml(s:toml,      {'lazy': 0})
-    call dein#load_toml(s:lazy_toml, {'lazy': 1})
+    if dein#load_state(s:dein_dir)
+        call dein#begin(s:dein_dir)
 
-    call dein#end()
-    call dein#save_state()
-endif
+        let s:toml      = g:rc_dir . '/dein.toml'
+        let s:lazy_toml = g:rc_dir . '/dein_lazy.toml'
 
-if dein#check_install(['vimproc.vim'])
-    call dein#install(['vimproc.vim'])
-endif
+        call dein#load_toml(s:toml,      {'lazy': 0})
+        call dein#load_toml(s:lazy_toml, {'lazy': 1})
 
-if dein#check_install()
-    call dein#install()
-endif
+        call dein#end()
+        call dein#save_state()
+    endif
 
+    if dein#check_install(['vimproc.vim'])
+        call dein#install(['vimproc.vim'])
+    endif
 
-" Default settings
-if !has('nvim')
-    source $VIMRUNTIME/defaults.vim
+    if dein#check_install()
+        call dein#install()
+    endif
+
+    " Default settings
+    if !has('nvim')
+        source $VIMRUNTIME/defaults.vim
+    endif
 endif
 
 " Indentation

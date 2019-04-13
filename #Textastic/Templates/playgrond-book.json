@@ -1,0 +1,11 @@
+{
+    "uuid": "99432E27-4099-4717-8CD3-E6772CC6509F",
+    "category": "Swift Playgrounds",
+    "templates": [
+        {
+            "name": "Book",
+            "fileExtension": "plist",
+            "snippet": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">\n<plist version=\"1.0\">\n<dict>\n    <key>Chapters</key>\n    <array>\n        <string>${1:foo.playgroundchapter}</string>\n    </array>\n    <key>ContentIdentifier</key>\n    <string>${2:com.example.playgroundbook.foo}</string>\n    <key>ContentVersion</key>\n    <string>1</string>\n    <key>DeploymentTarget</key>\n    <string>ios12.2</string>\n    <key>DevelopmentRegion</key>\n    <string>en-US</string>\n    <key>Name</key>\n    <string>${3:foo}</string>\n    <key>Version</key>\n    <string>6.0</string>\n    <key>SwiftVersion</key>\n    <string>5.0</string>\n    <key>UserModuleMode</key>\n    <string>Full</string>\n    <key>UserAutoImportedAuxiliaryModules</key>\n    <array>\n    </array>\n</dict>\n</plist>\n"
+        }
+    ]
+}

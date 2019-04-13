@@ -1,0 +1,11 @@
+{
+    "uuid": "6FBEF6AB-0711-4387-9AFC-DE631D99FD5A",
+    "category": "Swift Playgrounds",
+    "templates": [
+        {
+            "name": "Page",
+            "fileExtension": "plist",
+            "snippet": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">\n<plist version=\"1.0\">\n<dict>\n    <key>Name</key>\n    <string>${1:foo}</string>\n    <key>Version</key>\n    <string>6.0</string>\n    <key>LiveViewEdgeToEdge</key>\n    <true/>\n    <key>LiveViewMode</key>\n    <string>VisibleByDefault</string>\n</dict>\n</plist>\n"
+        }
+    ]
+}

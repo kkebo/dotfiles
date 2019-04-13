@@ -1,0 +1,11 @@
+{
+    "uuid": "1EDB31E2-4C15-484A-9859-C8336B76B779",
+    "category": "Swift Playgrounds",
+    "templates": [
+        {
+            "name": "Chapter",
+            "fileExtension": "plist",
+            "snippet": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">\n<plist version=\"1.0\">\n<dict>\n    <key>Name</key>\n    <string>${1:foo}</string>\n    <key>Version</key>\n    <string>6.0</string>\n    <key>Pages</key>\n    <array>\n        <string>${2:foo.playgroundpage}</string>\n    </array>\n</dict>\n</plist>\n"
+        }
+    ]
+}

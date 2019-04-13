@@ -134,10 +134,8 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 " Move cursor by display lines
-nnoremap j gj
-nnoremap k gk
-vnoremap j gj
-vnoremap k gk
+noremap j gj
+noremap k gk
 
 " Buffer
 nnoremap <silent> <C-j> :bprev<CR>

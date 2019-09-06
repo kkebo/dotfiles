@@ -13,5 +13,3 @@ endif
 let g:material_theme_style = 'dark'
 set background=dark
 colorscheme material
-
-let g:airline_theme = 'material'

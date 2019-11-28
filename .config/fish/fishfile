@@ -5,10 +5,9 @@ barnybug/docker-fish-completion
 fisherman/done
 fisherman/getopts
 fisherman/gitignore
-fisherman/humanize_duration
-fisherman/imgcat
 oh-my-fish/plugin-peco
 laughedelic/pisces
 fisherman/spin
 fisherman/z
 evanlucas/fish-kubectl-completions
+danhper/fish-ssh-agent

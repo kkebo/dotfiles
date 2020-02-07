@@ -1,5 +1,4 @@
 let $VIM_HOME = fnamemodify(expand("$MYVIMRC"), ":p:h")
-set packpath=$VIM_HOME/.vim
 
 " Load plugins later
 autocmd FileType html packadd emmet-vim

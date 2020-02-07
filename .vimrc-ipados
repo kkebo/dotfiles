@@ -1,11 +1,5 @@
-if has('ios')
-    " For iVim
-    let $VIM_HOME = $HOME
-else
-    " For a-Shell or forked Blink Shell
-    let $VIM_HOME = $HOME . '/Documents'
-endif
-set packpath=$VIM_HOME
+let $VIM_HOME = fnamemodify(expand("$MYVIMRC"), ":p:h")
+set packpath=$VIM_HOME/.vim
 
 " Load plugins later
 autocmd FileType html packadd emmet-vim

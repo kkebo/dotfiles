@@ -1,12 +1,15 @@
-let $VIM_HOME = $HOME . '/Documents'
+if has('ios')
+    " For iVim
+    let $VIM_HOME = $HOME
+else
+    " For a-Shell or forked Blink Shell
+    let $VIM_HOME = $HOME . '/Documents'
+endif
 set packpath=$VIM_HOME
 
 " Load plugins later
 autocmd FileType html packadd emmet-vim
-autocmd FileType python packadd vim-lsp-python
 autocmd FileType python packadd vim-python-pep8-indent
-autocmd InsertEnter * packadd asyncomplete
-autocmd InsertEnter * packadd asyncomplete-lsp
 
 " Default settings
 if !has('nvim')
@@ -35,6 +38,9 @@ if has('emoji')
     set emoji
 endif
 set showtabline=2
+if has('gui_running')
+    set guifont=SFMono\ Regular\ Nerd\ Font\ Complete.otf:h12
+endif
 
 " Clipboard
 set clipboard=unnamed,unnamedplus
@@ -128,3 +134,17 @@ set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline_skip_empty_sections = 1
+
+" vim-lsp
+function! s:on_lsp_buffer_enabled() abort
+    setlocal omnifunc=lsp#complete
+    setlocal signcolumn=yes
+    nmap <buffer> gd <plug>(lsp-definition)
+    nmap <buffer> <f2> <plug>(lsp-rename)
+endfunction
+
+augroup lsp_install
+    au!
+    " call s:on_lsp_buffer_enabled only for languages that has the server registered.
+    autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
+augroup END

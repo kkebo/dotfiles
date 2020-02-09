@@ -1,9 +1,14 @@
 let $VIM_HOME = fnamemodify(expand("$MYVIMRC"), ":p:h")
-let uname_r = system('uname -r')
-if uname_r =~ '-ish\n$'
-    let lightweight = 1
-else
+if has('ios')
     let lightweight = 0
+else
+    let uname_r = system('uname -r')
+    if uname_r =~ '-ish\n$'
+        " For iSH
+        let lightweight = 1
+    else
+        let lightweight = 0
+    endif
 endif
 
 " Optional plugins

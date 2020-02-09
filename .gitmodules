@@ -1,0 +1,60 @@
+[submodule ".vim/pack/plugins/opt/emmet-vim"]
+	path = .vim/pack/plugins/opt/emmet-vim
+	url = https://github.com/mattn/emmet-vim.git
+[submodule ".vim/pack/plugins/opt/material.vim"]
+	path = .vim/pack/plugins/opt/material.vim
+	url = https://github.com/kaicataldo/material.vim.git
+[submodule ".vim/pack/plugins/opt/nerdtree"]
+	path = .vim/pack/plugins/opt/nerdtree
+	url = https://github.com/preservim/nerdtree.git
+[submodule ".vim/pack/plugins/opt/vim-airline"]
+	path = .vim/pack/plugins/opt/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule ".vim/pack/plugins/opt/vim-python-pep8-indent"]
+	path = .vim/pack/plugins/opt/vim-python-pep8-indent
+	url = https://github.com/Vimjas/vim-python-pep8-indent.git
+[submodule ".vim/pack/plugins/start/async.vim"]
+	path = .vim/pack/plugins/start/async.vim
+	url = https://github.com/prabirshrestha/async.vim.git
+[submodule ".vim/pack/plugins/start/indentLine"]
+	path = .vim/pack/plugins/start/indentLine
+	url = https://github.com/Yggdroot/indentLine.git
+[submodule ".vim/pack/plugins/start/rainbow"]
+	path = .vim/pack/plugins/start/rainbow
+	url = https://github.com/luochen1990/rainbow.git
+[submodule ".vim/pack/plugins/start/swift.vim"]
+	path = .vim/pack/plugins/start/swift.vim
+	url = https://github.com/keith/swift.vim.git
+[submodule ".vim/pack/plugins/start/tcomment_vim"]
+	path = .vim/pack/plugins/start/tcomment_vim
+	url = https://github.com/tomtom/tcomment_vim.git
+[submodule ".vim/pack/plugins/start/vim-better-whitespace"]
+	path = .vim/pack/plugins/start/vim-better-whitespace
+	url = https://github.com/ntpeters/vim-better-whitespace.git
+[submodule ".vim/pack/plugins/start/vim-lsp"]
+	path = .vim/pack/plugins/start/vim-lsp
+	url = https://github.com/prabirshrestha/vim-lsp.git
+[submodule ".vim/pack/plugins/start/vim-prototxt"]
+	path = .vim/pack/plugins/start/vim-prototxt
+	url = https://github.com/chiphogg/vim-prototxt.git
+[submodule ".vim/pack/plugins/opt/vim-fugitive"]
+	path = .vim/pack/plugins/opt/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule ".vim/pack/plugins/start/typescript-vim"]
+	path = .vim/pack/plugins/start/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git
+[submodule ".vim/pack/plugins/start/vim-toml"]
+	path = .vim/pack/plugins/start/vim-toml
+	url = https://github.com/cespare/vim-toml.git
+[submodule ".vim/pack/plugins/start/vim-fish"]
+	path = .vim/pack/plugins/start/vim-fish
+	url = https://github.com/dag/vim-fish.git
+[submodule ".vim/pack/plugins/start/vim-multiple-cursors"]
+	path = .vim/pack/plugins/start/vim-multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors.git
+[submodule ".vim/pack/plugins/opt/nerdtree-git-plugin"]
+	path = .vim/pack/plugins/opt/nerdtree-git-plugin
+	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
+[submodule ".vim/pack/plugins/opt/vim-gitgutter"]
+	path = .vim/pack/plugins/opt/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git

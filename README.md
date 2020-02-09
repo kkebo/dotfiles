@@ -1,28 +1,24 @@
 # dotfiles
 
-My dotfiles for macOS, Linux, or Windows Subsystem for Linux.
+My dotfiles for iPadOS, macOS, Linux, or Windows Subsystem for Linux.
 
 ## Prerequisites
 
 - fish
+  - [Fisher](https://github.com/jorgebucaran/fisher)
+  - [ripgrep](https://github.com/BurntSushi/ripgrep)
+  - [bat](https://github.com/sharkdp/bat)
+  - [lsd](https://github.com/Peltoche/lsd)
+  - (macOS) `brew install terminal-notifier`
 - tmux
-- vim 8 or later
-- Python 3
-- ripgrep
-- bat
-- rustup, rls, and racer
-- git
-- fzf
-- peco
-- `pip3 install powerline-status`
-- `pip3 install pynvim`
-- `pip3 install psutil`
-- `pip3 install python-language-server`
-- (macOS) `brew install terminal-notifier`
+  - `pip3 install powerline-status`
+  - `pip3 install psutil`
+- Vim 8 or later
+  - Python 3
 
 ## Contents
 
-### vim (for 8.0 or later with Python 3 support)
+### Vim (for 8.0 or later with Python 3 support)
 
 - `.vimrc`
 - `.vim/*`
@@ -43,6 +39,10 @@ My dotfiles for macOS, Linux, or Windows Subsystem for Linux.
 ### Visual Studio Code
 
 - `VSCode/*`
+
+### Textastic
+
+- `#Textastic/*`
 
 ### zsh (not maintained)
 

@@ -1,5 +1,5 @@
 let $VIM_HOME = fnamemodify(expand("$MYVIMRC"), ":p:h")
-if has('ios')
+if has('ios') || has('mac')
     let lightweight = 0
 else
     let uname_r = system('uname -r')

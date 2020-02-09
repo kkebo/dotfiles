@@ -11,21 +11,6 @@ else
     endif
 endif
 
-" Optional plugins
-autocmd FileType html packadd emmet-vim
-autocmd FileType python packadd vim-python-pep8-indent
-if executable('git')
-    packadd vim-fugitive
-    packadd vim-gitgutter
-endif
-if !lightweight
-    packadd vim-airline
-    packadd nerdtree
-    if executable('git')
-        packadd nerdtree-git-plugin
-    endif
-endif
-
 " Default settings
 if !has('nvim')
     source $VIMRUNTIME/defaults.vim
@@ -181,3 +166,18 @@ if executable('rg')
     let g:gitgutter_grep = 'rg'
 endif
 set updatetime=100
+
+" Optional plugins
+autocmd FileType html packadd emmet-vim
+autocmd FileType python packadd vim-python-pep8-indent
+if executable('git')
+    packadd vim-fugitive
+    packadd vim-gitgutter
+endif
+if !lightweight
+    packadd vim-airline
+    packadd nerdtree
+    if executable('git')
+        packadd nerdtree-git-plugin
+    endif
+endif

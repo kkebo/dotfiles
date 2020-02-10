@@ -148,6 +148,14 @@ if executable('pyls')
         \ })
 endif
 
+if executable('ra_lsp_server')
+    au User lsp_setup call lsp#register_server({
+        \ 'name': 'rust-analyzer',
+        \ 'cmd': {server_info->['ra_lsp_server']},
+        \ 'whitelist': ['rust'],
+        \ })
+endif
+
 function! s:on_lsp_buffer_enabled() abort
     setlocal omnifunc=lsp#complete
     setlocal signcolumn=yes

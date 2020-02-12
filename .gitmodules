@@ -58,3 +58,9 @@
 [submodule ".vim/pack/plugins/opt/vim-gitgutter"]
 	path = .vim/pack/plugins/opt/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
+[submodule ".vim/pack/plugins/opt/asyncomplete.vim"]
+	path = .vim/pack/plugins/start/asyncomplete.vim
+	url = https://github.com/prabirshrestha/asyncomplete.vim.git
+[submodule ".vim/pack/plugins/opt/asyncomplete-lsp.vim"]
+	path = .vim/pack/plugins/start/asyncomplete-lsp.vim
+	url = https://github.com/prabirshrestha/asyncomplete-lsp.vim.git

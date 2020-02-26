@@ -148,10 +148,10 @@ if executable('pyls')
         \ })
 endif
 
-if executable('ra_lsp_server')
+if executable('rust-analyzer')
     au User lsp_setup call lsp#register_server({
         \ 'name': 'rust-analyzer',
-        \ 'cmd': {server_info->['ra_lsp_server']},
+        \ 'cmd': {server_info->['rust-analyzer']},
         \ 'whitelist': ['rust'],
         \ })
 endif

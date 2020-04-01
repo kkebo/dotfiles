@@ -66,6 +66,7 @@ if type -q vim
 end
 if type -q bat
     alias cat="bat"
+    set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
 end
 if type -q rg
     alias grep="rg"

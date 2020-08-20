@@ -98,18 +98,22 @@ augroup END
 let g:indentLine_leadingSpaceEnabled = 1
 let g:indentLine_leadingSpaceChar = '·'
 
-" material.vim
+" material.vim or minimalist
 if has('termguicolors')
     set termguicolors
+
+    " tmux 24-bit color
+    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+
+    let g:material_theme_style = 'dark'
+    set background=dark
+    colorscheme material
+else
+    set t_Co=256
+    syntax on
+    colorscheme minimalist
 endif
-
-" tmux 24-bit color
-let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-
-let g:material_theme_style = 'dark'
-set background=dark
-colorscheme material
 
 " nerdtree
 if !lightweight

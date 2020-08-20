@@ -64,3 +64,6 @@
 [submodule ".vim/pack/plugins/opt/asyncomplete-lsp.vim"]
 	path = .vim/pack/plugins/start/asyncomplete-lsp.vim
 	url = https://github.com/prabirshrestha/asyncomplete-lsp.vim.git
+[submodule ".vim/pack/plugins/opt/minimalist"]
+	path = .vim/pack/plugins/opt/minimalist
+	url = https://github.com/dikiaap/minimalist.git

@@ -8,8 +8,6 @@
 	path = .vim/pack/plugins/opt/nerdtree
 	url = https://github.com/preservim/nerdtree.git
 [submodule ".vim/pack/plugins/opt/vim-airline"]
-	path = .vim/pack/plugins/opt/vim-airline
-	url = https://github.com/vim-airline/vim-airline.git
 [submodule ".vim/pack/plugins/opt/vim-python-pep8-indent"]
 	path = .vim/pack/plugins/opt/vim-python-pep8-indent
 	url = https://github.com/Vimjas/vim-python-pep8-indent.git
@@ -67,3 +65,9 @@
 [submodule ".vim/pack/plugins/opt/minimalist"]
 	path = .vim/pack/plugins/opt/minimalist
 	url = https://github.com/dikiaap/minimalist.git
+[submodule ".vim/pack/plugins/opt/lightline.vim"]
+	path = .vim/pack/plugins/opt/lightline.vim
+	url = https://github.com/itchyny/lightline.vim.git
+[submodule ".vim/pack/plugins/opt/lightline-bufferline"]
+	path = .vim/pack/plugins/opt/lightline-bufferline
+	url = https://github.com/mengelbrecht/lightline-bufferline.git

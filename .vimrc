@@ -135,12 +135,28 @@ let g:syntastic_swift_checkers = ['swiftpm', 'swiftlint']
 " tcomment_vim
 autocmd FileType prototxt call tcomment#type#Define('prototxt', '# %s')
 
-" vim-airline
+" lightline
 if !lightweight
     set laststatus=2
-    let g:airline#extensions#tabline#enabled = 1
-    let g:airline_powerline_fonts = 1
-    let g:airline_skip_empty_sections = 1
+
+    let g:lightline = {
+        \ 'colorscheme': 'powerline',
+        \ 'active': {
+        \     'left': [['mode', 'paste'], ['readonly', 'filename', 'modified']]
+        \ },
+        \ 'tabline': {
+        \     'left': [['buffers']],
+        \     'right': [['close']]
+        \ },
+        \ 'component_expand': {
+        \     'buffers': 'lightline#bufferline#buffers'
+        \ },
+        \ 'component_type': {
+        \     'buffers': 'tabsel'
+        \ },
+        \ 'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
+        \ 'subseparator': { 'left': "\ue0b1", 'right': "\ue0b3" }
+        \ }
 endif
 
 " vim-lsp
@@ -187,7 +203,8 @@ if executable('git')
     packadd vim-gitgutter
 endif
 if !lightweight
-    packadd vim-airline
+    packadd lightline.vim
+    packadd lightline-bufferline
     packadd nerdtree
     if executable('git')
         packadd nerdtree-git-plugin

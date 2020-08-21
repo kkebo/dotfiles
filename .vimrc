@@ -155,7 +155,20 @@ if !lightweight
         \     'buffers': 'tabsel'
         \ },
         \ 'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
-        \ 'subseparator': { 'left': "\ue0b1", 'right': "\ue0b3" }
+        \ 'subseparator': { 'left': "\ue0b1", 'right': "\ue0b3" },
+        \ 'mode_map': {
+        \     'n': 'N',
+        \     'i': 'I',
+        \     'R': 'R',
+        \     'v': 'V',
+        \     'V': 'VL',
+        \     "\<C-v>": 'VB',
+        \     'c': 'C',
+        \     's': 'S',
+        \     'S': 'SL',
+        \     "\<C-s>": 'SB',
+        \     't': 'T',
+        \ }
         \ }
 endif
 

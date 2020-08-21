@@ -142,7 +142,7 @@ if !lightweight
     let g:lightline = {
         \ 'colorscheme': 'powerline',
         \ 'active': {
-        \     'left': [['mode', 'paste'], ['readonly', 'filename', 'modified']]
+        \     'left': [['mode', 'paste'], ['gitbranch', 'readonly', 'filename', 'modified']]
         \ },
         \ 'tabline': {
         \     'left': [['buffers']],
@@ -153,6 +153,9 @@ if !lightweight
         \ },
         \ 'component_type': {
         \     'buffers': 'tabsel'
+        \ },
+        \ 'component_function': {
+        \     'gitbranch': 'FugitiveHead'
         \ },
         \ 'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
         \ 'subseparator': { 'left': "\ue0b1", 'right': "\ue0b3" },

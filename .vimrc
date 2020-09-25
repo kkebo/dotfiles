@@ -192,6 +192,20 @@ if executable('rust-analyzer')
         \ })
 endif
 
+if executable('xcrun')
+    au User lsp_setup call lsp#register_server({
+        \ 'name': 'sourcekit-lsp',
+        \ 'cmd': {server_info->['xcrun', 'sourcekit-lsp']},
+        \ 'whitelist': ['swift'],
+        \ })
+elseif executable('sourcekit-lsp')
+    au User lsp_setup call lsp#register_server({
+        \ 'name': 'sourcekit-lsp',
+        \ 'cmd': {server_info->['sourcekit-lsp']},
+        \ 'whitelist': ['swift'],
+        \ })
+endif
+
 function! s:on_lsp_buffer_enabled() abort
     setlocal omnifunc=lsp#complete
     setlocal signcolumn=yes

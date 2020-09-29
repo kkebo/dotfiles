@@ -115,17 +115,28 @@ else
     colorscheme minimalist
 endif
 
-" nerdtree
-if !lightweight
-    let g:NERDTreeShowHidden = 1
-
-    autocmd vimenter * NERDTree
-    autocmd VimEnter * wincmd p
-    autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
-    nnoremap <leader>w :bp<cr>:bd #<cr>
+" Fern
+let g:fern#renderer = "nerdfont"
+nnoremap <leader>w :bp<cr>:bd #<cr>
+if executable('git')
+    packadd fern-git-status.vim
 endif
 
+function! s:init_fern() abort
+    setlocal nonumber
+    setlocal nowrap
+    nmap <buffer> o <Plug>(fern-action-open:edit)
+endfunction
+
+augroup fern-custom
+    autocmd! *
+    autocmd FileType fern call s:init_fern()
+augroup END
+
+augroup my-fern-startup
+    autocmd! *
+    autocmd VimEnter * ++nested Fern . -drawer -stay
+augroup END
 " rainbow
 let g:rainbow_active = 1
 
@@ -235,8 +246,4 @@ endif
 if !lightweight
     packadd lightline.vim
     packadd lightline-bufferline
-    packadd nerdtree
-    if executable('git')
-        packadd nerdtree-git-plugin
-    endif
 endif

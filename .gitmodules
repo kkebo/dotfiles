@@ -4,9 +4,6 @@
 [submodule ".vim/pack/plugins/opt/material.vim"]
 	path = .vim/pack/plugins/opt/material.vim
 	url = https://github.com/kaicataldo/material.vim.git
-[submodule ".vim/pack/plugins/opt/nerdtree"]
-	path = .vim/pack/plugins/opt/nerdtree
-	url = https://github.com/preservim/nerdtree.git
 [submodule ".vim/pack/plugins/opt/vim-airline"]
 [submodule ".vim/pack/plugins/opt/vim-python-pep8-indent"]
 	path = .vim/pack/plugins/opt/vim-python-pep8-indent
@@ -50,9 +47,6 @@
 [submodule ".vim/pack/plugins/start/vim-multiple-cursors"]
 	path = .vim/pack/plugins/start/vim-multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors.git
-[submodule ".vim/pack/plugins/opt/nerdtree-git-plugin"]
-	path = .vim/pack/plugins/opt/nerdtree-git-plugin
-	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
 [submodule ".vim/pack/plugins/opt/vim-gitgutter"]
 	path = .vim/pack/plugins/opt/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
@@ -71,3 +65,21 @@
 [submodule ".vim/pack/plugins/opt/lightline-bufferline"]
 	path = .vim/pack/plugins/opt/lightline-bufferline
 	url = https://github.com/mengelbrecht/lightline-bufferline.git
+[submodule ".vim/pack/plugins/start/fern.vim"]
+	path = .vim/pack/plugins/start/fern.vim
+	url = https://github.com/lambdalisue/fern.vim.git
+[submodule ".vim/pack/plugins/opt/fern-git-status.vim"]
+	path = .vim/pack/plugins/opt/fern-git-status.vim
+	url = https://github.com/lambdalisue/fern-git-status.vim.git
+[submodule ".vim/pack/plugins/start/nerdfont.vim"]
+	path = .vim/pack/plugins/start/nerdfont.vim
+	url = https://github.com/lambdalisue/nerdfont.vim.git
+[submodule ".vim/pack/plugins/start/glyph-palette.vim"]
+	path = .vim/pack/plugins/start/glyph-palette.vim
+	url = https://github.com/lambdalisue/glyph-palette.vim.git
+[submodule ".vim/pack/plugins/start/fern-renderer-nerdfont.vim"]
+	path = .vim/pack/plugins/start/fern-renderer-nerdfont.vim
+	url = https://github.com/lambdalisue/fern-renderer-nerdfont.vim.git
+[submodule ".vim/pack/plugins/start/fern-hijack.vim"]
+	path = .vim/pack/plugins/start/fern-hijack.vim
+	url = https://github.com/lambdalisue/fern-hijack.vim.git

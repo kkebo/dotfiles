@@ -1,6 +1,6 @@
 # dotfiles
 
-My dotfiles for iPadOS, macOS, Linux, or Windows Subsystem for Linux.
+My dotfiles for iPadOS, macOS, FreeBSD, Linux, or Windows Subsystem for Linux.
 
 ## Prerequisites
 
@@ -43,12 +43,6 @@ My dotfiles for iPadOS, macOS, Linux, or Windows Subsystem for Linux.
 ### Textastic
 
 - `#Textastic/*`
-
-### zsh (not maintained)
-
-- `.zshrc`
-- `.zprofile`
-- `.zsh/*`
 
 ## Installation
 

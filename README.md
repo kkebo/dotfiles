@@ -36,10 +36,6 @@ My dotfiles for iPadOS, macOS, FreeBSD, Linux, or Windows Subsystem for Linux.
 
 - `.pip/*`
 
-### Visual Studio Code
-
-- `VSCode/*`
-
 ### Textastic
 
 - `#Textastic/*`
@@ -62,13 +58,6 @@ ln -s $HOME/dotfiles/.tmux.conf .
 
 # Install pip configuration
 ln -s $HOME/dotfiles/.pip .
-
-# Install Visual Studio Code configuration
-cp settings.json <settings file location>
-# <settings file location> is here:
-#   Windows: %appdata%\Code\User\settings.json
-#   macOS: $HOME/Library/Application Support/Code/User/settings.json
-#   Linux: $HOME/.config/Code/User/settings.json
 ```
 
 ## TODO

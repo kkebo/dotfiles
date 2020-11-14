@@ -1,5 +1,4 @@
 xrdb -merge $HOME/.Xresources
-xmodmap $HOME/.xmodmaprc
 
 # fcitx
 export QT_IM_MODULE=fcitx

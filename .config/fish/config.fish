@@ -46,6 +46,7 @@ end
 # bobthefish
 set -g theme_nerd_fonts yes
 set -g theme_color_scheme default
+set -g theme_display_git_default_branch yes
 set -x VIRTUAL_ENV_DISABLE_PROMPT 1
 
 # done

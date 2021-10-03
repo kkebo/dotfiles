@@ -2,41 +2,67 @@
 
 My dotfiles for iPadOS, macOS, FreeBSD, Linux, or Windows Subsystem for Linux.
 
-## Prerequisites
+## Vim
 
+### Prerequisites
+
+- iPadOS (iVim, a-Shell, iSH), macOS, FreeBSD, Linux, or WSL
+- Vim 8.0 or later with Python 3 support
+- Python 3
+
+### Files
+
+- `.vimrc`
+- `.vim/*`
+
+## fish
+
+### Prerequisites
+
+- macOS, FreeBSD, Linux, or WSL
 - fish
   - [Fisher](https://github.com/jorgebucaran/fisher)
   - [ripgrep](https://github.com/BurntSushi/ripgrep)
   - [bat](https://github.com/sharkdp/bat)
   - [lsd](https://github.com/Peltoche/lsd)
   - (macOS) `brew install terminal-notifier`
-- tmux
-  - `pip3 install powerline-status`
-  - `pip3 install psutil`
-- Vim 8 or later
-  - Python 3
 
-## Contents
-
-### Vim (for 8.0 or later with Python 3 support)
-
-- `.vimrc`
-- `.vim/*`
-
-### fish
+### Files
 
 - `.config/fish/config.fish`
 - `.config/fish/fishfile`
 
-### tmux
+## tmux
+
+### Prerequisites
+
+- macOS, FreeBSD, Linux, or WSL
+- tmux
+  - `pip3 install powerline-status`
+  - `pip3 install psutil`
+
+### Files
 
 - `.tmux.conf`
 
-### pip (for pip 9.0 or later)
+## pip
+
+### Prerequisites
+
+- iPadOS (iVim, a-Shell, iSH), macOS, FreeBSD, Linux, or WSL
+- pip 9.0 or later
+
+### Files
 
 - `.pip/*`
 
-### Textastic
+## Textastic
+
+### Prerequisites
+
+- iPadOS
+
+### Files
 
 - `#Textastic/*`
 

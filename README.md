@@ -61,12 +61,25 @@ My dotfiles for iPadOS, macOS, FreeBSD, Linux, or Windows Subsystem for Linux.
 ### Prerequisites
 
 - iPadOS
+- Textastic
 
 ### Files
 
 - `#Textastic/*`
 
-## Installation
+## a-Shell
+
+### Prerequisites
+
+- iPadOS
+- a-Shell
+
+### Files
+
+- `.profile.ashell`
+  - Rename it to `.profile`
+
+## Installation (examples)
 
 ```
 cd $HOME

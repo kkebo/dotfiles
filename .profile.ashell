@@ -1,9 +1,4 @@
 alias ll ls -lh
 alias la ls -lah
 
-jump dotfiles
-jump Downloads
-jump Documents
-cd
-
 config -s 12 -n 'SFMono Nerd Font'

@@ -138,6 +138,7 @@ augroup my-fern-startup
     autocmd! *
     autocmd VimEnter * ++nested Fern . -drawer -stay
 augroup END
+
 " rainbow
 let g:rainbow_active = 1
 

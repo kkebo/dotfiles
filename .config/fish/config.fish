@@ -19,6 +19,11 @@ if test -e $HOME/.cargo/bin
     set -x PATH $HOME/.cargo/bin $PATH
 end
 
+# Mint
+if test -e $HOME/.mint/bin
+    set -x PATH $HOME/.mint/bin $PATH
+end
+
 # Visual Studio Code
 if test -e "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 	set -x PATH /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin $PATH

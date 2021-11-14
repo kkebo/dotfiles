@@ -1,5 +1,4 @@
 umask 022
-set -x PATH /bin /sbin /usr/local/bin /usr/local/sbin /usr/bin /usr/sbin $PATH
 set -x LANG en_US.UTF-8
 
 # For WSL
@@ -22,6 +21,11 @@ end
 # Mint
 if test -e $HOME/.mint/bin
     set -x PATH $HOME/.mint/bin $PATH
+end
+
+# Homebrew
+if test -e /opt/homebrew/bin
+    set -x PATH /opt/homebrew/bin /opt/homebrew/sbin $PATH
 end
 
 # Visual Studio Code

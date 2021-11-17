@@ -4,7 +4,7 @@ My dotfiles for iPadOS, macOS, FreeBSD, Linux, or Windows Subsystem for Linux.
 
 ## Installation (a-Shell on iPadOS)
 
-```
+```shell
 cd
 lg2 clone <this repository>
 cd dotfiles
@@ -21,7 +21,7 @@ ln -s dotfiles/.vim .
 
 ## Installation (macOS, FreeBSD, Linux, or WSL)
 
-```
+```shell
 cd $HOME
 git clone --recurse-submodules -j8 <this repository>
 

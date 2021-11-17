@@ -17,9 +17,6 @@ ln -s dotfiles/.profile.ashell .profile
 # Install vim configuration
 ln -s dotfiles/.vimrc .
 ln -s dotfiles/.vim .
-
-# Install pip configuration
-ln -s dotfiles/.pip .
 ```
 
 ## Installation (macOS, FreeBSD, Linux, or WSL)
@@ -37,9 +34,6 @@ ln -s $HOME/dotfiles/.config/fish .config/
 
 # Install tmux configuration
 ln -s $HOME/dotfiles/.tmux.conf .
-
-# Install pip configuration
-ln -s $HOME/dotfiles/.pip .
 ```
 
 ## Vim
@@ -84,17 +78,6 @@ ln -s $HOME/dotfiles/.pip .
 ### Files
 
 - `.tmux.conf`
-
-## pip
-
-### Prerequisites
-
-- iPadOS (iVim, a-Shell, iSH), macOS, FreeBSD, Linux, or WSL
-- pip 9.0 or later
-
-### Files
-
-- `.pip/*`
 
 ## Textastic
 

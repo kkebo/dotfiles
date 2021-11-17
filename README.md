@@ -2,6 +2,46 @@
 
 My dotfiles for iPadOS, macOS, FreeBSD, Linux, or Windows Subsystem for Linux.
 
+## Installation (a-Shell on iPadOS)
+
+```
+cd
+lg2 clone <this repository>
+cd dotfiles
+lg2 submodule update --init --recursive
+cd ..
+
+# Install .profile
+ln -s dotfiles/.profile.ashell .profile
+
+# Install vim configuration
+ln -s dotfiles/.vimrc .
+ln -s dotfiles/.vim .
+
+# Install pip configuration
+ln -s dotfiles/.pip .
+```
+
+## Installation (macOS, FreeBSD, Linux, or WSL)
+
+```
+cd $HOME
+git clone --recurse-submodules -j8 <this repository>
+
+# Install vim configuration
+ln -s $HOME/dotfiles/.vimrc .
+ln -s $HOME/dotfiles/.vim .
+
+# Install fish configuration
+ln -s $HOME/dotfiles/.config/fish .config/
+
+# Install tmux configuration
+ln -s $HOME/dotfiles/.tmux.conf .
+
+# Install pip configuration
+ln -s $HOME/dotfiles/.pip .
+```
+
 ## Vim
 
 ### Prerequisites
@@ -78,26 +118,6 @@ My dotfiles for iPadOS, macOS, FreeBSD, Linux, or Windows Subsystem for Linux.
 
 - `.profile.ashell`
   - Rename it to `.profile`
-
-## Installation (examples)
-
-```
-cd $HOME
-git clone <this repository>
-
-# Install vim configuration
-ln -s $HOME/dotfiles/.vimrc .
-ln -s $HOME/dotfiles/.vim .
-
-# Install fish configuration
-ln -s $HOME/dotfiles/.config/fish .config/
-
-# Install tmux configuration
-ln -s $HOME/dotfiles/.tmux.conf .
-
-# Install pip configuration
-ln -s $HOME/dotfiles/.pip .
-```
 
 ## TODO
 

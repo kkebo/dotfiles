@@ -39,7 +39,7 @@ if has('emoji')
 endif
 set showtabline=2
 if has('gui_running')
-    set guifont=SFMono\ Regular\ Nerd\ Font\ Complete.otf:h12
+    set guifont=SFMono\ Nerd\ Font:h12
 endif
 
 " Clipboard

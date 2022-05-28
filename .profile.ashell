@@ -1,6 +1,6 @@
 export LANG=en_US.UTF-8
 export EDITOR=vim
-setenv PS1 '\e[48;2;76;86;106m \w \e[m\e[38;2;76;86;106m\e[m '
+export PS1='\e[48;2;76;86;106m \w \e[m\e[38;2;76;86;106m\e[m '
 
 alias view="vim -RM"
 alias vi="vim"

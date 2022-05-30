@@ -11,8 +11,9 @@ cd dotfiles
 lg2 submodule update --init --recursive
 cd ..
 
-# Install .profile
+# Install .profile and .bashrc
 ln -s dotfiles/.profile.ashell .profile
+ln -s dotfiles/.bashrc.ashell .bashrc
 
 # Install vim configuration
 ln -s dotfiles/.vimrc .

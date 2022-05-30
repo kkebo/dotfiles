@@ -1,6 +1,8 @@
 export LANG=en_US.UTF-8
 export EDITOR=vim
-export PS1='\e[48;2;76;86;106m \w \e[m\e[38;2;76;86;106m\e[m '
+
+# For dash
+export PS1='$(echo "\\033[48;2;76;86;106m") $PWD $(echo "\\033[m\\033[38;2;76;86;106m\\033[m ")'
 
 alias view="vim -RM"
 alias vi="vim"
@@ -8,4 +10,6 @@ alias vi="vim"
 alias ll="ls -l"
 alias la="ls -la"
 
-config -s 12 -n 'SFMono Nerd Font'
+if test -e config; then
+    config -s 12 -n 'SFMono Nerd Font'
+fi

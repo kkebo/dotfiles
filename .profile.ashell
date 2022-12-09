@@ -8,8 +8,8 @@ alias view="vim -RM"
 alias vi="vim"
 alias git="lg2"
 
-alias ll="ls -l"
-alias la="ls -la"
+alias ll="ls -lh"
+alias la="ls -lah"
 
 if test -e config; then
     config -s 12 -n 'SFMono Nerd Font'

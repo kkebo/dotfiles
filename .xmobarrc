@@ -1,4 +1,4 @@
-Config { font = "xft:Noto Sans:style=Regular:size=8"
+Config { font = "xft:Noto Sans:style=Regular:size=10"
        , additionalFonts = []
        , borderColor = "black"
        , border = TopB

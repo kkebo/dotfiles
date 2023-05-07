@@ -1,15 +1,4 @@
 let $VIM_HOME = fnamemodify(expand("$MYVIMRC"), ":p:h")
-if has('ios') || has('mac')
-    let lightweight = 0
-else
-    let uname_r = system('uname -r')
-    if uname_r =~ '-ish\n$'
-        " For iSH
-        let lightweight = 1
-    else
-        let lightweight = 0
-    endif
-endif
 
 " Default settings
 if !has('nvim')
@@ -172,44 +161,42 @@ let g:syntastic_swift_checkers = ['swiftpm', 'swiftlint']
 autocmd FileType prototxt call tcomment#type#Define('prototxt', '# %s')
 
 " lightline
-if !lightweight
-    set laststatus=2
+set laststatus=2
 
-    let g:lightline = {
-        \ 'colorscheme': 'powerline',
-        \ 'active': {
-        \     'left': [['mode', 'paste'], ['gitbranch', 'readonly', 'filename', 'modified']]
-        \ },
-        \ 'tabline': {
-        \     'left': [['buffers']],
-        \     'right': [['close']]
-        \ },
-        \ 'component_expand': {
-        \     'buffers': 'lightline#bufferline#buffers'
-        \ },
-        \ 'component_type': {
-        \     'buffers': 'tabsel'
-        \ },
-        \ 'component_function': {
-        \     'gitbranch': 'FugitiveHead'
-        \ },
-        \ 'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
-        \ 'subseparator': { 'left': "\ue0b1", 'right': "\ue0b3" },
-        \ 'mode_map': {
-        \     'n': 'N',
-        \     'i': 'I',
-        \     'R': 'R',
-        \     'v': 'V',
-        \     'V': 'VL',
-        \     "\<C-v>": 'VB',
-        \     'c': 'C',
-        \     's': 'S',
-        \     'S': 'SL',
-        \     "\<C-s>": 'SB',
-        \     't': 'T',
-        \ }
-        \ }
-endif
+let g:lightline = {
+    \ 'colorscheme': 'powerline',
+    \ 'active': {
+    \     'left': [['mode', 'paste'], ['gitbranch', 'readonly', 'filename', 'modified']]
+    \ },
+    \ 'tabline': {
+    \     'left': [['buffers']],
+    \     'right': [['close']]
+    \ },
+    \ 'component_expand': {
+    \     'buffers': 'lightline#bufferline#buffers'
+    \ },
+    \ 'component_type': {
+    \     'buffers': 'tabsel'
+    \ },
+    \ 'component_function': {
+    \     'gitbranch': 'FugitiveHead'
+    \ },
+    \ 'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
+    \ 'subseparator': { 'left': "\ue0b1", 'right': "\ue0b3" },
+    \ 'mode_map': {
+    \     'n': 'N',
+    \     'i': 'I',
+    \     'R': 'R',
+    \     'v': 'V',
+    \     'V': 'VL',
+    \     "\<C-v>": 'VB',
+    \     'c': 'C',
+    \     's': 'S',
+    \     'S': 'SL',
+    \     "\<C-s>": 'SB',
+    \     't': 'T',
+    \ }
+    \ }
 
 " vim-lsp
 if executable('jedi-language-server')
@@ -271,7 +258,5 @@ if executable('git')
     packadd vim-fugitive
     packadd vim-gitgutter
 endif
-if !lightweight
-    packadd lightline.vim
-    packadd lightline-bufferline
-endif
+packadd lightline.vim
+packadd lightline-bufferline

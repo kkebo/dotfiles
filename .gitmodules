@@ -58,10 +58,10 @@
 	path = .vim/pack/plugins/opt/minimalist
 	url = https://github.com/dikiaap/minimalist.git
 [submodule ".vim/pack/plugins/opt/lightline.vim"]
-	path = .vim/pack/plugins/opt/lightline.vim
+	path = .vim/pack/plugins/start/lightline.vim
 	url = https://github.com/itchyny/lightline.vim.git
 [submodule ".vim/pack/plugins/opt/lightline-bufferline"]
-	path = .vim/pack/plugins/opt/lightline-bufferline
+	path = .vim/pack/plugins/start/lightline-bufferline
 	url = https://github.com/mengelbrecht/lightline-bufferline.git
 [submodule ".vim/pack/plugins/start/fern.vim"]
 	path = .vim/pack/plugins/start/fern.vim

@@ -258,5 +258,3 @@ if executable('git')
     packadd vim-fugitive
     packadd vim-gitgutter
 endif
-packadd lightline.vim
-packadd lightline-bufferline

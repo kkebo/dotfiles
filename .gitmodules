@@ -81,3 +81,6 @@
 [submodule ".vim/pack/plugins/start/fern-hijack.vim"]
 	path = .vim/pack/plugins/start/fern-hijack.vim
 	url = https://github.com/lambdalisue/fern-hijack.vim.git
+[submodule ".vim/pack/plugins/start/yaifa"]
+	path = .vim/pack/plugins/start/yaifa
+	url = https://github.com/Raimondi/yaifa.git

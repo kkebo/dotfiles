@@ -261,6 +261,9 @@ if executable('rg')
 endif
 set updatetime=100
 
+" yaifa
+let g:yaifa_tabstop = 4
+
 " Optional plugins
 autocmd FileType html packadd emmet-vim
 autocmd FileType python packadd vim-python-pep8-indent

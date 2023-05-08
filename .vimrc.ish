@@ -1,0 +1,74 @@
+" Indentation
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+set autoindent
+set smartindent
+
+" Appearance
+set number
+set cursorline
+set lazyredraw
+set showmatch
+set matchtime=1
+set display=lastline
+set breakindent
+set showbreak=>
+set breakindentopt=shift:4,sbr
+if has('emoji')
+    set emoji
+endif
+set showtabline=2
+
+" Clipboard
+set clipboard=unnamed,unnamedplus
+
+" Searching
+set hlsearch
+nnoremap <leader><space> :nohlsearch<CR>
+
+" Folding
+set foldenable
+set foldlevelstart=10
+set foldnestmax=10
+nnoremap <space> za
+set foldmethod=indent
+
+" Undo
+if has('persistent_undo')
+    set undofile
+    set undodir=$VIM_HOME/.vim/undo
+endif
+
+" autoread
+set autoread
+augroup vimrc-checktime
+    autocmd!
+    autocmd CursorMoved * checktime
+augroup END
+
+" Window Navigation
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" Move cursor by display lines
+noremap j gj
+noremap k gk
+
+" Buffer
+nnoremap <silent> <C-j> :bprev<CR>
+nnoremap <silent> <C-k> :bnext<CR>
+
+" HEX editor
+augroup BinaryXXD
+    autocmd!
+    autocmd BufReadPre  *.bin let &binary =1
+    autocmd BufReadPost * if &binary | silent %!xxd -g 1
+    autocmd BufReadPost * set ft=xxd | endif
+    autocmd BufWritePre * if &binary | %!xxd -r | endif
+    autocmd BufWritePost * if &binary | silent %!xxd -g 1
+    autocmd BufWritePost * set nomod | endif
+augroup END

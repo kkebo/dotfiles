@@ -37,6 +37,19 @@ ln -s $HOME/dotfiles/.config/fish .config/
 ln -s $HOME/dotfiles/.tmux.conf .
 ```
 
+## Installation (iSH on iPadOS)
+
+```shell
+cd $HOME
+git clone --recurse-submodules -j8 <this repository>
+
+# Install vim configuration
+ln -s $HOME/dotfiles/.vimrc.ish .vimrc
+
+# Install fish configuration
+ln -s $HOME/dotfiles/.config/fish .config/
+```
+
 ## Vim
 
 ### Prerequisites

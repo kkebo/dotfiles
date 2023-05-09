@@ -2,7 +2,7 @@ umask 022
 set -x LANG en_US.UTF-8
 
 # For WSL
-if uname -r | string match -r 'Microsoft$'
+if uname -r | string match -q -r 'Microsoft$'
 	set -x LIBGL_ALWAYS_INDIRECT 1
 	set -x DISPLAY localhost:0.0
 	set -x GTK_MODULES $GTK_MODULES appmenu-gtk-module
@@ -64,6 +64,9 @@ set -U __done_min_cmd_duration 5000
 # Preferences
 if type -q vim
     set -x EDITOR vim
+    if uname -r | string match -q -r -- '-ish$'
+        alias vim="vim -N -u $HOME/.vimrc"
+    end
     alias view="vim -RM"
     alias vi="vim"
 end

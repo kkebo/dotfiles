@@ -3,14 +3,14 @@ set -x LANG en_US.UTF-8
 
 # For WSL
 if uname -r | string match -q -r 'Microsoft$'
-	set -x LIBGL_ALWAYS_INDIRECT 1
-	set -x DISPLAY localhost:0.0
-	set -x GTK_MODULES $GTK_MODULES appmenu-gtk-module
-	set -x UBUNTU_MENUPROXY 1
-	set -x NO_AT_BRIDGE 1
-	set -x XMODIFIERS @im=fcitx
-	set -x GTK_IM_MODULE fcitx
-	set -x QT_IM_MODULE fcitx
+    set -x LIBGL_ALWAYS_INDIRECT 1
+    set -x DISPLAY localhost:0.0
+    set -x GTK_MODULES $GTK_MODULES appmenu-gtk-module
+    set -x UBUNTU_MENUPROXY 1
+    set -x NO_AT_BRIDGE 1
+    set -x XMODIFIERS @im=fcitx
+    set -x GTK_IM_MODULE fcitx
+    set -x QT_IM_MODULE fcitx
 end
 
 # Rustup
@@ -30,7 +30,7 @@ end
 
 # Visual Studio Code
 if test -e "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-	set -x PATH /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin $PATH
+    set -x PATH /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin $PATH
 end
 
 # Go

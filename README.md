@@ -23,7 +23,7 @@ ln -s dotfiles/.vim .
 ## Installation (macOS, FreeBSD, Linux, or WSL)
 
 ```shell
-cd $HOME
+cd
 git clone --recurse-submodules -j8 <this repository>
 
 # Install vim configuration
@@ -40,7 +40,7 @@ ln -s $HOME/dotfiles/.tmux.conf .
 ## Installation (iSH on iPadOS)
 
 ```shell
-cd $HOME
+cd
 git clone --recurse-submodules -j8 <this repository>
 
 # Install vim configuration

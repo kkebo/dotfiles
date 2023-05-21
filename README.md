@@ -41,7 +41,7 @@ ln -s $HOME/dotfiles/.tmux.conf .
 
 ```shell
 cd
-git clone --recurse-submodules -j8 <this repository>
+git clone --recurse-submodules <this repository>
 
 # Install vim configuration
 ln -s $HOME/dotfiles/.vimrc.ish .vimrc

@@ -1,10 +1,18 @@
 {
   "en-US" : {
+    "symbols" : "`-=~!@#$%^&*()_+[]\\{}|;':\",.\/<>?",
+    "letters" : "abcdefghijklmnopqrstuvwxyz",
     "mappings" : {
 
     },
-    "symbols" : "`-=~!@#$%^&*()_+[]\\{}|;':\",.\/<>?",
-    "letters" : "abcdefghijklmnopqrstuvwxyz",
     "version" : "0.0.1"
+  },
+  "ja-JP" : {
+    "letters" : "abcdefghijklmnopqrstuvwxyz",
+    "mappings" : {
+
+    },
+    "version" : "0.0.1",
+    "symbols" : "`-=~!@#$%^&*()_+[]\\{}|;':\",.\/<>?"
   }
 }

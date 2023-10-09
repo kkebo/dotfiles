@@ -47,11 +47,6 @@ if test -e $HOME/opt/cross
     set -x PATH $HOME/opt/cross/bin $PATH
 end
 
-# Python (macOS)
-if test -e $HOME/Library/Python/2.7/bin
-    set -x PATH $HOME/Library/Python/2.7/bin $PATH
-end
-
 # VirtualGL (macOS)
 if test -e /opt/VirtualGL/bin
     set -x PATH /opt/VirtualGL/bin $PATH

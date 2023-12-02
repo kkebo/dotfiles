@@ -150,6 +150,12 @@ augroup my-fern-startup
     autocmd VimEnter * ++nested Fern . -drawer -stay
 augroup END
 
+" glyph-palette
+augroup my-glyph-palette
+    autocmd! *
+    autocmd FileType fern call glyph_palette#apply()
+augroup END
+
 " rainbow
 let g:rainbow_active = 1
 

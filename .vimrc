@@ -87,6 +87,8 @@ augroup END
 " indentLine
 let g:indentLine_leadingSpaceEnabled = 1
 let g:indentLine_leadingSpaceChar = '·'
+let g:vim_json_conceal = 0
+let g:markdown_syntax_conceal = 0
 
 " vim-code-dark or minimalist
 if has('termguicolors')

@@ -71,6 +71,7 @@ noremap k gk
 " Buffer
 nnoremap <silent> <C-j> :bprev<CR>
 nnoremap <silent> <C-k> :bnext<CR>
+set hidden  " allows to move between buffers without saving the current one
 
 " HEX editor
 augroup BinaryXXD

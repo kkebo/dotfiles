@@ -87,7 +87,7 @@ augroup END
 let g:indentLine_leadingSpaceEnabled = 1
 let g:indentLine_leadingSpaceChar = '·'
 
-" material.vim or minimalist
+" vim-code-dark or minimalist
 if has('termguicolors')
     set termguicolors
 
@@ -95,9 +95,8 @@ if has('termguicolors')
     let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
     let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
-    let g:material_theme_style = 'dark'
-    set background=dark
-    colorscheme material
+    let g:codedark_modern=1
+    colorscheme codedark
 else
     set t_Co=256
     syntax on
@@ -164,7 +163,7 @@ autocmd FileType prototxt call tcomment#type#Define('prototxt', '# %s')
 set laststatus=2
 
 let g:lightline = {
-    \ 'colorscheme': 'powerline',
+    \ 'colorscheme': 'codedark',
     \ 'active': {
     \     'left': [['mode', 'paste'], ['gitbranch', 'readonly', 'filename', 'modified']]
     \ },

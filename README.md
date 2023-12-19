@@ -1,6 +1,6 @@
 # dotfiles
 
-My dotfiles for iPadOS, macOS, FreeBSD, Linux, or Windows Subsystem for Linux.
+My dotfiles for iPadOS, macOS, FreeBSD, Linux, and Windows Subsystem for Linux.
 
 ## Installation (a-Shell on iPadOS)
 

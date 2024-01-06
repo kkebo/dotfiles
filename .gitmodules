@@ -1,9 +1,6 @@
 [submodule ".vim/pack/plugins/opt/emmet-vim"]
 	path = .vim/pack/plugins/opt/emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
-[submodule ".vim/pack/plugins/opt/material.vim"]
-	path = .vim/pack/plugins/opt/material.vim
-	url = https://github.com/kaicataldo/material.vim.git
 [submodule ".vim/pack/plugins/opt/vim-airline"]
 [submodule ".vim/pack/plugins/opt/vim-python-pep8-indent"]
 	path = .vim/pack/plugins/opt/vim-python-pep8-indent

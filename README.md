@@ -32,6 +32,7 @@ ln -s $HOME/dotfiles/.vim .
 
 # Install fish configuration
 ln -s $HOME/dotfiles/.config/fish .config/
+ln -s $HOME/dotfiles/.mytheme.omp.json .mytheme.omp.json
 
 # Install tmux configuration
 ln -s $HOME/dotfiles/.tmux.conf .
@@ -75,6 +76,7 @@ ln -s $HOME/dotfiles/.config/fish .config/
   - [bat](https://github.com/sharkdp/bat)
   - [lsd](https://github.com/Peltoche/lsd)
   - (macOS) `brew install terminal-notifier`
+- [oh-my-posh](https://ohmyposh.dev)
 
 ### Files
 

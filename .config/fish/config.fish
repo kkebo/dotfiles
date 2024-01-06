@@ -52,11 +52,10 @@ if test -e /opt/VirtualGL/bin
     set -x PATH /opt/VirtualGL/bin $PATH
 end
 
-# bobthefish
-set -g theme_nerd_fonts yes
-set -g theme_color_scheme default
-set -g theme_display_git_default_branch yes
-set -x VIRTUAL_ENV_DISABLE_PROMPT 1
+# oh-my-posh
+if type -q oh-my-posh
+    oh-my-posh init fish --config $HOME/.mytheme.omp.json | source
+end
 
 # done
 set -U __done_min_cmd_duration 5000

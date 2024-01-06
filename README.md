@@ -32,7 +32,7 @@ ln -s $HOME/dotfiles/.vim .
 
 # Install fish configuration
 ln -s $HOME/dotfiles/.config/fish .config/
-ln -s $HOME/dotfiles/.mytheme.omp.json .mytheme.omp.json
+ln -s $HOME/dotfiles/.mytheme.omp.json .
 
 # Install tmux configuration
 ln -s $HOME/dotfiles/.tmux.conf .

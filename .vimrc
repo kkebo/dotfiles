@@ -94,6 +94,27 @@ let g:markdown_syntax_conceal = 0
 if has('termguicolors')
     set termguicolors
 
+    " Terminal (MaterialDarker)
+    let g:terminal_ansi_colors = [
+        \ "#000000",
+        \ "#ff5370",
+        \ "#c3e88d",
+        \ "#ffcb6b",
+        \ "#82aaff",
+        \ "#c792ea",
+        \ "#89ddff",
+        \ "#ffffff",
+        \ "#545454",
+        \ "#ff5370",
+        \ "#c3e88d",
+        \ "#ffcb6b",
+        \ "#82aaff",
+        \ "#c792ea",
+        \ "#89ddff",
+        \ "#ffffff" ]
+    highlight Terminal guifg='#eeffff'
+    highlight Terminal guibg='#212121'
+
     " tmux 24-bit color
     let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
     let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"

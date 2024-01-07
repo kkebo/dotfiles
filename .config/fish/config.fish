@@ -13,16 +13,6 @@ if uname -r | string match -q -r 'Microsoft$'
     set -x QT_IM_MODULE fcitx
 end
 
-# Rustup
-if test -e $HOME/.cargo/bin
-    set -x PATH $HOME/.cargo/bin $PATH
-end
-
-# Swiftly
-if test -e $HOME/.local/bin
-    set -x PATH $HOME/.local/bin $PATH
-end
-
 # Mint
 if test -e $HOME/.mint/bin
     set -x PATH $HOME/.mint/bin $PATH

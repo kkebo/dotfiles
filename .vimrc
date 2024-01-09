@@ -189,6 +189,13 @@ autocmd FileType prototxt call tcomment#type#Define('prototxt', '# %s')
 " lightline
 set laststatus=2
 
+function LightlineBufferlineFilter(buffer)
+      return getbufvar(a:buffer, '&buftype') !=# 'terminal'
+endfunction
+
+let g:lightline#bufferline#buffer_filter = "LightlineBufferlineFilter"
+let g:lightline#bufferline#enable_nerdfont = 1
+let g:lightline#bufferline#clickable = 1
 let g:lightline = {
     \ 'colorscheme': 'codedark',
     \ 'active': {
@@ -203,6 +210,9 @@ let g:lightline = {
     \ },
     \ 'component_type': {
     \     'buffers': 'tabsel'
+    \ },
+    \ 'component_raw': {
+    \     'buffers': 1
     \ },
     \ 'component_function': {
     \     'gitbranch': 'FugitiveHead'

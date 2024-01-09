@@ -47,6 +47,11 @@ if type -q oh-my-posh
     oh-my-posh init fish --config $HOME/.mytheme.omp.json | source
 end
 
+# direnv
+if type -q direnv
+    direnv hook fish | source
+end
+
 # done
 set -U __done_min_cmd_duration 5000
 

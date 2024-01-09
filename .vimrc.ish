@@ -16,6 +16,7 @@ set display=lastline
 set breakindent
 set showbreak=>
 set breakindentopt=shift:4,sbr
+set nowrap
 if has('emoji')
     set emoji
 endif
@@ -50,13 +51,9 @@ augroup END
 
 " Window Navigation
 nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
+" nnoremap <C-j> <C-w>j
+" nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
-
-" Move cursor by display lines
-noremap j gj
-noremap k gk
 
 " Buffer
 nnoremap <silent> <C-j> :bprev<CR>

@@ -66,8 +66,8 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
 " Buffer
-nnoremap <silent> <C-j> :bprev<CR>
-nnoremap <silent> <C-k> :bnext<CR>
+nnoremap <silent> <C-j> <Plug>lightline#bufferline#go_previous()
+nnoremap <silent> <C-k> <Plug>lightline#bufferline#go_next()
 set hidden  " allows to move between buffers without saving the current one
 
 " HEX editor

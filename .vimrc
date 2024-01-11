@@ -128,7 +128,7 @@ endif
 let g:fern#renderer = "nerdfont"
 let g:fern#default_hidden = 1
 let g:fern#disable_default_mappings = 1
-nnoremap <leader>w :bp<cr>:bd #<cr>
+nnoremap <leader>w <Plug>lightline#bufferline#go_previous():bd #<cr>
 if executable('git')
     packadd fern-git-status.vim
 endif

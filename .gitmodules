@@ -84,3 +84,6 @@
 [submodule ".vim/pack/plugins/opt/vim-code-dark"]
 	path = .vim/pack/plugins/start/vim-code-dark
 	url = https://github.com/tomasiser/vim-code-dark.git
+[submodule ".vim/pack/plugins/start/lightline-lsp"]
+	path = .vim/pack/plugins/start/lightline-lsp
+	url = https://github.com/tsuyoshicho/lightline-lsp.git

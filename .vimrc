@@ -196,26 +196,41 @@ endfunction
 let g:lightline#bufferline#buffer_filter = "LightlineBufferlineFilter"
 let g:lightline#bufferline#enable_nerdfont = 1
 let g:lightline#bufferline#clickable = 1
+let g:lightline#lsp#indicator_checking = "\uf110"
+" let g:lightline#lsp#indicator_warning = "\uf071"
+" let g:lightline#lsp#indicator_error = "\uf05e"
+" let g:lightline#lsp#indicator_information = "\uf05a"
+" let g:lightline#lsp#indicator_hint = "\uf0e5"
+let g:lightline#lsp#indicator_ok = "\uf00c"
 let g:lightline = {
     \ 'colorscheme': 'codedark',
     \ 'active': {
-    \     'left': [['mode', 'paste'], ['gitbranch', 'readonly', 'filename', 'modified']]
+    \     'left': [['mode', 'paste'], ['gitbranch', 'readonly', 'filename', 'modified'], ['lsp_diag_count', 'lsp_diag_checking', 'lsp_diag_ok'], ['lsp_status_error', 'lsp_status_warning']],
     \ },
     \ 'tabline': {
     \     'left': [['buffers']],
     \     'right': [['close']]
     \ },
     \ 'component_expand': {
-    \     'buffers': 'lightline#bufferline#buffers'
+    \     'buffers': 'lightline#bufferline#buffers',
+    \     'lsp_status_error': 'lightline#lsp#status_error',
+    \     'lsp_status_warning': 'lightline#lsp#status_warning',
+    \     'lsp_diag_checking': 'lightline#lsp#checking',
+    \     'lsp_diag_ok': 'lightline#lsp#ok'
     \ },
     \ 'component_type': {
-    \     'buffers': 'tabsel'
+    \     'buffers': 'tabsel',
+    \     'lsp_status_error': 'error',
+    \     'lsp_status_warning': 'warning',
+    \     'lsp_diag_checking': 'ok',
+    \     'lsp_diag_ok': 'ok'
     \ },
     \ 'component_raw': {
     \     'buffers': 1
     \ },
     \ 'component_function': {
-    \     'gitbranch': 'FugitiveHead'
+    \     'gitbranch': 'FugitiveHead',
+    \     'lsp_diag_count': 'lightline#lsp#count'
     \ },
     \ 'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
     \ 'subseparator': { 'left': "\ue0b1", 'right': "\ue0b3" },

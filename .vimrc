@@ -185,9 +185,9 @@ autocmd FileType prototxt call tcomment#type#Define('prototxt', '# %s')
 
 " lightline
 set laststatus=2
-nnoremap <silent> <C-j> <Plug>lightline#bufferline#go_previous()
-nnoremap <silent> <C-k> <Plug>lightline#bufferline#go_next()
-nnoremap <silent> <leader>w <Plug>lightline#bufferline#go_previous():bd #<cr>
+nmap <silent> <C-j> <Plug>lightline#bufferline#go_previous()
+nmap <silent> <C-k> <Plug>lightline#bufferline#go_next()
+nmap <silent> <leader>w <Plug>lightline#bufferline#go_previous():bd #<cr>
 
 function LightlineBufferlineFilter(buffer)
       return getbufvar(a:buffer, '&buftype') !=# 'terminal'

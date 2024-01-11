@@ -58,6 +58,7 @@ nnoremap <C-l> <C-w>l
 " Buffer
 nnoremap <silent> <C-j> :bprev<CR>
 nnoremap <silent> <C-k> :bnext<CR>
+nnoremap <silent> <leader>w :bp<cr>:bd #<cr>
 set hidden  " allows to move between buffers without saving the current one
 
 " HEX editor

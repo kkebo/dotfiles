@@ -66,8 +66,6 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
 " Buffer
-nnoremap <silent> <C-j> <Plug>lightline#bufferline#go_previous()
-nnoremap <silent> <C-k> <Plug>lightline#bufferline#go_next()
 set hidden  " allows to move between buffers without saving the current one
 
 " HEX editor
@@ -128,7 +126,6 @@ endif
 let g:fern#renderer = "nerdfont"
 let g:fern#default_hidden = 1
 let g:fern#disable_default_mappings = 1
-nnoremap <leader>w <Plug>lightline#bufferline#go_previous():bd #<cr>
 if executable('git')
     packadd fern-git-status.vim
 endif
@@ -188,6 +185,9 @@ autocmd FileType prototxt call tcomment#type#Define('prototxt', '# %s')
 
 " lightline
 set laststatus=2
+nnoremap <silent> <C-j> <Plug>lightline#bufferline#go_previous()
+nnoremap <silent> <C-k> <Plug>lightline#bufferline#go_next()
+nnoremap <silent> <leader>w <Plug>lightline#bufferline#go_previous():bd #<cr>
 
 function LightlineBufferlineFilter(buffer)
       return getbufvar(a:buffer, '&buftype') !=# 'terminal'

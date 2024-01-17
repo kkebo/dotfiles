@@ -5,50 +5,26 @@ My dotfiles for iPadOS, macOS, FreeBSD, Linux, and Windows Subsystem for Linux.
 ## Installation (a-Shell on iPadOS)
 
 ```shell
-cd
 lg2 clone <this repository>
 cd dotfiles
 lg2 submodule update --init --recursive
-cd ..
-
-# Install .profile and .bashrc
-ln -s dotfiles/.profile.ashell .profile
-ln -s dotfiles/.bashrc.ashell .bashrc
-
-# Install vim configuration
-ln -s dotfiles/.vimrc .
-ln -s dotfiles/.vim .
+./install.ashell.sh
 ```
 
 ## Installation (macOS, FreeBSD, Linux, or WSL)
 
 ```shell
-cd
 git clone --recurse-submodules -j8 <this repository>
-
-# Install vim configuration
-ln -s $HOME/dotfiles/.vimrc .
-ln -s $HOME/dotfiles/.vim .
-
-# Install fish configuration
-ln -s $HOME/dotfiles/.config/fish .config/
-ln -s $HOME/dotfiles/.mytheme.omp.json .
-
-# Install tmux configuration
-ln -s $HOME/dotfiles/.tmux.conf .
+cd dotfiles
+./install.sh
 ```
 
 ## Installation (iSH on iPadOS)
 
 ```shell
-cd
 git clone --recurse-submodules <this repository>
-
-# Install vim configuration
-ln -s $HOME/dotfiles/.vimrc.ish .vimrc
-
-# Install fish configuration
-ln -s $HOME/dotfiles/.config/fish .config/
+cd dotfiles
+./install.ish.sh
 ```
 
 ## Vim
@@ -118,7 +94,3 @@ ln -s $HOME/dotfiles/.config/fish .config/
 
 - `.profile.ashell`
   - Rename it to `.profile`
-
-## TODO
-
-- [ ] Installer shellscript

@@ -31,6 +31,10 @@ set showtabline=2
 if has('gui_running')
     set guifont=SFMono\ Nerd\ Font:h12
 endif
+set fillchars+=vert:\│
+if v:version >= 802
+    set fillchars+=eob:\ 
+endif
 
 " Clipboard
 set clipboard=unnamed,unnamedplus
@@ -80,6 +84,7 @@ augroup BinaryXXD
 augroup END
 
 " indentLine
+let g:indentLine_char = '│'
 let g:indentLine_leadingSpaceEnabled = 1
 let g:indentLine_leadingSpaceChar = '·'
 let g:vim_json_conceal = 0
@@ -132,7 +137,8 @@ endif
 
 function! s:init_fern() abort
     setlocal nonumber
-    setlocal nowrap
+    let b:indentLine_enabled = 0
+    let b:indentLine_leadingSpaceEnabled = 0
 
     " Define NERDTree like mappings
     nmap <buffer> o <Plug>(fern-action-open:edit)

@@ -1,0 +1,14 @@
+[user]
+    name = Kenta Kubo
+    email = 601636+kkk669@users.noreply.github.com
+[init]
+    defaultBranch = main
+[push]
+    autoSetupRemote = true
+[commit]
+    gpgSign = true
+[pull]
+    rebase = true
+[rebase]
+    autosquash = true
+    autostash = true

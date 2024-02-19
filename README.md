@@ -72,6 +72,17 @@ cd dotfiles
 
 - `.tmux.conf`
 
+## Git
+
+### Prerequisites
+
+- macOS, FreeBSD, Linux, or WSL
+- Git
+
+### Files
+
+- `.gitconfig`
+
 ## Textastic
 
 ### Prerequisites

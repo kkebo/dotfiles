@@ -10,3 +10,5 @@ ln -s "$BASEDIR/.config/fish" "$HOME/.config/"
 ln -s "$BASEDIR/.mytheme.omp.json" "$HOME/"
 
 ln -s "$BASEDIR/.tmux.conf" "$HOME/"
+
+ln -s "$BASEDIR/.gitconfig" "$HOME/"

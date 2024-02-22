@@ -328,7 +328,7 @@ set updatetime=100
 let g:yaifa_tabstop = 4
 
 " Optional plugins
-autocmd FileType html packadd emmet-vim
+autocmd FileType html,markdown packadd emmet-vim
 autocmd FileType python packadd vim-python-pep8-indent
 if executable('git')
     packadd vim-fugitive

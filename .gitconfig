@@ -7,8 +7,6 @@
     autoSetupRemote = true
 [commit]
     gpgSign = true
-[pull]
-    rebase = true
 [rebase]
     autosquash = true
     autostash = true

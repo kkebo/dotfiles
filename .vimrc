@@ -36,6 +36,9 @@ if v:version >= 802
     set fillchars+=eob:\ 
 endif
 
+" Mouse
+set mouse=nvi
+
 " Clipboard
 set clipboard=unnamed,unnamedplus
 

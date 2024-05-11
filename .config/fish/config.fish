@@ -13,6 +13,11 @@ if uname -r | string match -q -r 'Microsoft$'
     set -x QT_IM_MODULE fcitx
 end
 
+# Swift Package Manager
+if test -e $HOME/.swiftpm/bin
+    set -x PATH $HOME/.swiftpm/bin $PATH
+end
+
 # Mint
 if test -e $HOME/.mint/bin
     set -x PATH $HOME/.mint/bin $PATH

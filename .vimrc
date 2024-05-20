@@ -44,6 +44,7 @@ set clipboard=unnamed,unnamedplus
 
 " Searching
 set hlsearch
+set shortmess-=S
 nnoremap <leader><space> :nohlsearch<CR>
 
 " Folding

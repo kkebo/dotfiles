@@ -11,6 +11,10 @@ alias vi="vim"
 alias ll="ls -lh"
 alias la="ls -lah"
 
+if test -e rg; then
+    alias grep="rg"
+fi
+
 if test -e config; then
     config -s 12 -n 'SFMono Nerd Font'
 fi

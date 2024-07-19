@@ -1,6 +1,6 @@
 #!/bin/sh -eux
 
-BASEDIR="$(dirname "$(realpath "$0")")"
+BASEDIR=$(dirname "$(realpath "$0")")
 
 ln -s "$BASEDIR/.vimrc.ish" "$HOME/.vimrc"
 

@@ -1,6 +1,6 @@
 #!/bin/sh -eux
 
-BASEDIR="$PWD"
+BASEDIR=$PWD
 
 ln -s "$BASEDIR/.vimrc" "$HOME/Documents/"
 ln -s "$BASEDIR/.vim" "$HOME/Documents/"

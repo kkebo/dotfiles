@@ -2,10 +2,12 @@
 
 BASEDIR=$(dirname "$(realpath "$0")")
 
-ln -sf "$BASEDIR/.vimrc.ish" "$HOME/.vimrc"
+cd
 
-mkdir -p "$HOME/.config"
-ln -sf "$BASEDIR/.config/fish" "$HOME/.config/"
+ln -sf "$BASEDIR/.vimrc.ish" .vimrc
 
-ln -sf "$BASEDIR/.config/git" "$HOME/.config/"
-ln -sf "$BASEDIR/.gitconfig" "$HOME/"
+mkdir -p .config
+ln -sf "$BASEDIR/.config/fish" .config/
+
+ln -sf "$BASEDIR/.config/git" .config/
+ln -sf "$BASEDIR/.gitconfig" .

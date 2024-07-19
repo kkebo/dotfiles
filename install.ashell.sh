@@ -12,5 +12,6 @@ ln -sf "$RELBASEDIR/.profile.ashell" .profile
 ln -sf "$RELBASEDIR/.bashrc.ashell" .bashrc
 
 mkdir -p .config
-ln -sf "../$RELBASEDIR/.config/git" .config/
+# FIXME: `ln` can't link to "../somewhere" in dash
+ln -sf "$BASEDIR/.config/git" .config/
 ln -sf "$RELBASEDIR/.gitconfig" .

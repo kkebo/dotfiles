@@ -1,9 +1,9 @@
 #!/bin/sh -eux
 
 BASEDIR=$(cd "$(dirname "$0")" && pwd -P)
-RELBASEDIR=${BASEDIR#"$HOME/"}
+RELBASEDIR=${BASEDIR#"$HOME/Documents/"}
 
-cd
+cd $HOME/Documents
 
 ln -sf "$RELBASEDIR/.vimrc" .
 ln -sf "$RELBASEDIR/.vim" .

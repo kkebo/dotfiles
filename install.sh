@@ -1,17 +1,18 @@
 #!/bin/sh -eux
 
 BASEDIR=$(dirname "$(realpath "$0")")
+RELBASEDIR=${BASEDIR#"$HOME/"}
 
 cd
 
-ln -sf "$BASEDIR/.vimrc" .
-ln -sf "$BASEDIR/.vim" .
+ln -sf "$RELBASEDIR/.vimrc" .
+ln -sf "$RELBASEDIR/.vim" .
 
 mkdir -p .config
-ln -sf "$BASEDIR/.config/fish" .config/
-ln -sf "$BASEDIR/.mytheme.omp.json" .
+ln -sf "../$RELBASEDIR/.config/fish" .config/
+ln -sf "$RELBASEDIR/.mytheme.omp.json" .
 
-ln -sf "$BASEDIR/.tmux.conf" .
+ln -sf "$RELBASEDIR/.tmux.conf" .
 
-ln -sf "$BASEDIR/.config/git" .config/
-ln -sf "$BASEDIR/.gitconfig" .
+ln -sf "../$RELBASEDIR/.config/git" .config/
+ln -sf "$RELBASEDIR/.gitconfig" .

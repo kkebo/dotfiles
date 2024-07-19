@@ -1,13 +1,14 @@
 #!/bin/sh -eux
 
 BASEDIR=$(dirname "$(realpath "$0")")
+RELBASEDIR=${BASEDIR#"$HOME/"}
 
 cd
 
-ln -sf "$BASEDIR/.vimrc.ish" .vimrc
+ln -sf "$RELBASEDIR/.vimrc.ish" .vimrc
 
 mkdir -p .config
-ln -sf "$BASEDIR/.config/fish" .config/
+ln -sf "../$RELBASEDIR/.config/fish" .config/
 
-ln -sf "$BASEDIR/.config/git" .config/
-ln -sf "$BASEDIR/.gitconfig" .
+ln -sf "../$RELBASEDIR/.config/git" .config/
+ln -sf "$RELBASEDIR/.gitconfig" .

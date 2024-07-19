@@ -1,15 +1,16 @@
 #!/bin/sh -eux
 
-BASEDIR=$PWD
+BASEDIR=$(dirname "$PWD/$0")
+RELBASEDIR=${BASEDIR#"$HOME/"}
 
 cd
 
-ln -sf "$BASEDIR/.vimrc" .
-ln -sf "$BASEDIR/.vim" .
+ln -sf "$RELBASEDIR/.vimrc" .
+ln -sf "$RELBASEDIR/.vim" .
 
-ln -sf "$BASEDIR/.profile.ashell" .profile
-ln -sf "$BASEDIR/.bashrc.ashell" .bashrc
+ln -sf "$RELBASEDIR/.profile.ashell" .profile
+ln -sf "$RELBASEDIR/.bashrc.ashell" .bashrc
 
 mkdir -p .config
-ln -sf "$BASEDIR/.config/git" .config/
-ln -sf "$BASEDIR/.gitconfig" .
+ln -sf "../$RELBASEDIR/.config/git" .config/
+ln -sf "$RELBASEDIR/.gitconfig" .

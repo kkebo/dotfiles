@@ -1,6 +1,6 @@
 #!/bin/sh -eux
 
-BASEDIR=$(dirname "$(realpath "$0")")
+BASEDIR=$(cd "$(dirname "$0")" && pwd -P)
 RELBASEDIR=${BASEDIR#"$HOME/"}
 
 cd

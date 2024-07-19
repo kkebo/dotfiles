@@ -3,7 +3,7 @@
 BASEDIR=$(cd "$(dirname "$0")" && pwd -P)
 RELBASEDIR=${BASEDIR#"$HOME/Documents/"}
 
-cd $HOME/Documents
+cd "$HOME/Documents"
 
 ln -sf "$RELBASEDIR/.vimrc" .
 ln -sf "$RELBASEDIR/.vim" .

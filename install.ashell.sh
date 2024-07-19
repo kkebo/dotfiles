@@ -2,12 +2,12 @@
 
 BASEDIR=$PWD
 
-ln -s "$BASEDIR/.vimrc" "$HOME/Documents/"
-ln -s "$BASEDIR/.vim" "$HOME/Documents/"
+ln -sf "$BASEDIR/.vimrc" "$HOME/Documents/"
+ln -sf "$BASEDIR/.vim" "$HOME/Documents/"
 
-ln -s "$BASEDIR/.profile.ashell" "$HOME/Documents/.profile"
-ln -s "$BASEDIR/.bashrc.ashell" "$HOME/Documents/.bashrc"
+ln -sf "$BASEDIR/.profile.ashell" "$HOME/Documents/.profile"
+ln -sf "$BASEDIR/.bashrc.ashell" "$HOME/Documents/.bashrc"
 
 mkdir -p "$HOME/Documents/.config"
-ln -s "$BASEDIR/.config/git" "$HOME/Documents/.config/"
-ln -s "$BASEDIR/.gitconfig" "$HOME/Documents/"
+ln -sf "$BASEDIR/.config/git" "$HOME/Documents/.config/"
+ln -sf "$BASEDIR/.gitconfig" "$HOME/Documents/"

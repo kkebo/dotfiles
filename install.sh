@@ -2,14 +2,14 @@
 
 BASEDIR=$(dirname "$(realpath "$0")")
 
-ln -s "$BASEDIR/.vimrc" "$HOME/"
-ln -s "$BASEDIR/.vim" "$HOME/"
+ln -sf "$BASEDIR/.vimrc" "$HOME/"
+ln -sf "$BASEDIR/.vim" "$HOME/"
 
 mkdir -p "$HOME/.config"
-ln -s "$BASEDIR/.config/fish" "$HOME/.config/"
-ln -s "$BASEDIR/.mytheme.omp.json" "$HOME/"
+ln -sf "$BASEDIR/.config/fish" "$HOME/.config/"
+ln -sf "$BASEDIR/.mytheme.omp.json" "$HOME/"
 
-ln -s "$BASEDIR/.tmux.conf" "$HOME/"
+ln -sf "$BASEDIR/.tmux.conf" "$HOME/"
 
-ln -s "$BASEDIR/.config/git" "$HOME/.config/"
-ln -s "$BASEDIR/.gitconfig" "$HOME/"
+ln -sf "$BASEDIR/.config/git" "$HOME/.config/"
+ln -sf "$BASEDIR/.gitconfig" "$HOME/"

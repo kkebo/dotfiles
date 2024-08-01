@@ -277,10 +277,10 @@ let g:lightline = {
     \ }
 
 " vim-lsp
-if executable('jedi-language-server')
+if executable('pyright-langserver')
     au User lsp_setup call lsp#register_server({
-        \ 'name': 'jedi-language-server',
-        \ 'cmd': {server_info->['jedi-language-server']},
+        \ 'name': 'pyright',
+        \ 'cmd': {server_info->['pyright-langserver', '--stdio']},
         \ 'whitelist': ['python'],
         \ })
 endif

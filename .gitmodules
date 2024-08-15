@@ -87,3 +87,6 @@
 [submodule ".vim/pack/plugins/start/lightline-lsp"]
 	path = .vim/pack/plugins/start/lightline-lsp
 	url = https://github.com/tsuyoshicho/lightline-lsp.git
+[submodule ".vim/pack/plugins/start/vim-oscyank"]
+	path = .vim/pack/plugins/start/vim-oscyank
+	url = https://github.com/ojroques/vim-oscyank.git

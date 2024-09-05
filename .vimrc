@@ -49,7 +49,7 @@ if (!has('nvim') && !has('clipboard_working'))
     " still distinct, so we want to check them all.
     let s:VimOSCYankPostRegisters = ['', '+', '*']
     function! s:VimOSCYankPostCallback(event)
-        if a:event.operator == 'y' && index(s:VimOSCYankPostRegisters, a:event.regname) != -1
+        if (a:event.operator == 'y' || a:event.operator == 'd') && index(s:VimOSCYankPostRegisters, a:event.regname) != -1
             call OSCYankRegister(a:event.regname)
         endif
     endfunction

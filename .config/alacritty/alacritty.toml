@@ -1,0 +1,14 @@
+import = [
+    "~/.config/alacritty/themes/themes/papercolor_dark.toml"
+]
+shell = "/opt/homebrew/bin/fish"
+
+[font]
+normal = { family = "SFMono Nerd Font", style = "Regular" }
+size = 12
+
+[window]
+dimensions = { columns = 140, lines = 48 }
+
+[selection]
+save_to_clipboard = true

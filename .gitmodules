@@ -90,3 +90,6 @@
 [submodule ".vim/pack/plugins/start/vim-oscyank"]
 	path = .vim/pack/plugins/start/vim-oscyank
 	url = https://github.com/ojroques/vim-oscyank.git
+[submodule ".config/alacritty/themes"]
+	path = .config/alacritty/themes
+	url = https://github.com/alacritty/alacritty-theme

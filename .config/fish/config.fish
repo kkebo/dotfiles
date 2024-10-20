@@ -1,6 +1,8 @@
 umask 022
 set -x LANG en_US.UTF-8
 
+set -g fish_greeting
+
 # For WSL
 if uname -r | string match -q -r 'Microsoft$'
     set -x LIBGL_ALWAYS_INDIRECT 1

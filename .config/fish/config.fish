@@ -16,38 +16,26 @@ if uname -r | string match -q -r 'Microsoft$'
 end
 
 # Swift Package Manager
-if test -e $HOME/.swiftpm/bin
-    set -x PATH $HOME/.swiftpm/bin $PATH
-end
+fish_add_path -P $HOME/.swiftpm/bin
 
 # Mint
-if test -e $HOME/.mint/bin
-    set -x PATH $HOME/.mint/bin $PATH
-end
+fish_add_path -P $HOME/.mint/bin
 
 # Homebrew
-if test -e /opt/homebrew/bin
-    set -x PATH /opt/homebrew/bin /opt/homebrew/sbin $PATH
-end
+fish_add_path -P /opt/homebrew/bin /opt/homebrew/sbin
 
 # Visual Studio Code
-if test -e "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-    set -x PATH /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin $PATH
-end
+fish_add_path -P /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin
 
 # Go
 set -x GOPATH $HOME/go
-set -x PATH $PATH $GOPATH/bin
+fish_add_path -maP $GOPATH/bin
 
 # cross compiler
-if test -e $HOME/opt/cross
-    set -x PATH $HOME/opt/cross/bin $PATH
-end
+fish_add_path -P $HOME/opt/cross/bin
 
 # VirtualGL (macOS)
-if test -e /opt/VirtualGL/bin
-    set -x PATH /opt/VirtualGL/bin $PATH
-end
+fish_add_path -P /opt/VirtualGL/bin
 
 # oh-my-posh
 if type -q oh-my-posh
@@ -60,7 +48,7 @@ if type -q direnv
 end
 
 # done
-set -U __done_min_cmd_duration 5000
+set -g __done_min_cmd_duration 5000
 
 # Preferences
 if type -q vim

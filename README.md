@@ -34,7 +34,6 @@ cd dotfiles
 - iPadOS (iVim, a-Shell, iSH), macOS, FreeBSD, Linux, or WSL
 - Vim 8.0 or later with Python 3 support
 - Python 3
-- [yank](https://github.com/sunaku/home/blob/master/bin/yank) (For OSC52)
 
 ### Files
 
@@ -67,7 +66,6 @@ cd dotfiles
 - macOS, FreeBSD, Linux, or WSL
 - `pip3 install powerline-status`
 - `pip3 install psutil`
-- [yank](https://github.com/sunaku/home/blob/master/bin/yank) (For OSC52)
 
 ### Files
 

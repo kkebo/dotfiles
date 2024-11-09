@@ -1,6 +1,9 @@
+[general]
 import = [
     "~/.config/alacritty/themes/themes/papercolor_dark.toml"
 ]
+
+[terminal]
 shell = "/opt/homebrew/bin/fish"
 
 [font]

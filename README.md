@@ -77,6 +77,9 @@ cd dotfiles
 
 - macOS, FreeBSD, Linux, or WSL
 - Git
+- GnuPG
+  - `export GPG_TTY=$(TTY)`
+  - importing my secret key with `gpg --import`
 
 ### Files
 

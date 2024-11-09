@@ -16,26 +16,26 @@ if uname -r | string match -q -r 'Microsoft$'
 end
 
 # Swift Package Manager
-fish_add_path -P $HOME/.swiftpm/bin
+fish_add_path -mP $HOME/.swiftpm/bin
 
 # Mint
-fish_add_path -P $HOME/.mint/bin
+fish_add_path -mP $HOME/.mint/bin
 
 # Homebrew
-fish_add_path -P /opt/homebrew/bin /opt/homebrew/sbin
+fish_add_path -mP /opt/homebrew/bin /opt/homebrew/sbin
 
 # Visual Studio Code
-fish_add_path -P /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin
+fish_add_path -mP /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin
 
 # Go
 set -x GOPATH $HOME/go
 fish_add_path -maP $GOPATH/bin
 
 # cross compiler
-fish_add_path -P $HOME/opt/cross/bin
+fish_add_path -mP $HOME/opt/cross/bin
 
 # VirtualGL (macOS)
-fish_add_path -P /opt/VirtualGL/bin
+fish_add_path -mP /opt/VirtualGL/bin
 
 # oh-my-posh
 if type -q oh-my-posh

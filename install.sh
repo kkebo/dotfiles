@@ -15,4 +15,3 @@ ln -sf "$RELBASEDIR/.mytheme.omp.json" .
 ln -sf "../$RELBASEDIR/.config/tmux" .config/
 
 ln -sf "../$RELBASEDIR/.config/git" .config/
-ln -sf "$RELBASEDIR/.gitconfig" .

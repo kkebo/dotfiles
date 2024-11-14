@@ -11,4 +11,3 @@ mkdir -p .config
 ln -sf "../$RELBASEDIR/.config/fish" .config/
 
 ln -sf "../$RELBASEDIR/.config/git" .config/
-ln -sf "$RELBASEDIR/.gitconfig" .

@@ -84,7 +84,7 @@ cd dotfiles
 
 ### Files
 
-- `.gitconfig`
+- `.config/git/config`
 - `.config/git/ignore`
 
 ## Textastic

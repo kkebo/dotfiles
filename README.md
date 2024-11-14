@@ -115,6 +115,7 @@ cd dotfiles
 ### Prerequisites
 
 - macOS
+- tmux
 
 ### Files
 

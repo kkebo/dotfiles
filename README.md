@@ -64,12 +64,12 @@ cd dotfiles
 ### Prerequisites
 
 - macOS, FreeBSD, Linux, or WSL
-- `pip3 install powerline-status`
-- `pip3 install psutil`
+- fish (for clipboard)
 
 ### Files
 
-- `.tmux.conf`
+- `.config/tmux/tmux.conf`
+- `.config/tmux/*`
 
 ## Git
 

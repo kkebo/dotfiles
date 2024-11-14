@@ -48,6 +48,7 @@ cd dotfiles
 - macOS, FreeBSD, Linux, or WSL
 - fish
   - [Fisher](https://github.com/jorgebucaran/fisher)
+    - `curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher update`
   - [ripgrep](https://github.com/BurntSushi/ripgrep)
   - [bat](https://github.com/sharkdp/bat)
   - [lsd](https://github.com/Peltoche/lsd)
@@ -57,7 +58,7 @@ cd dotfiles
 ### Files
 
 - `.config/fish/config.fish`
-- `.config/fish/fishfile`
+- `.config/fish/fish_plugins`
 
 ## tmux
 

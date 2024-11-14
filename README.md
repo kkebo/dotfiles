@@ -109,3 +109,14 @@ cd dotfiles
 
 - `.profile.ashell`
   - Rename it to `.profile`
+
+## Alacritty
+
+### Prerequisites
+
+- macOS
+
+### Files
+
+- `.config/alacritty/alacritty.toml`
+- `.config/alacritty/*`

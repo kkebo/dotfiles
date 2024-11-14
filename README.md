@@ -53,7 +53,7 @@ cd dotfiles
   - [bat](https://github.com/sharkdp/bat)
   - [lsd](https://github.com/Peltoche/lsd)
   - (macOS) `brew install terminal-notifier`
-- [oh-my-posh](https://ohmyposh.dev)
+- [Oh My Posh](https://ohmyposh.dev)
 
 ### Files
 
@@ -120,3 +120,13 @@ cd dotfiles
 
 - `.config/alacritty/alacritty.toml`
 - `.config/alacritty/*`
+
+## Oh My Posh
+
+### Prerequisites
+
+- [Oh My Posh](https://ohmyposh.dev)
+
+### Files
+
+- `.config/omp/*`

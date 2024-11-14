@@ -115,7 +115,6 @@ cd dotfiles
 ### Prerequisites
 
 - macOS
-- fish
 - tmux
 
 ### Files

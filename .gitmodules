@@ -95,4 +95,4 @@
 	url = https://github.com/alacritty/alacritty-theme
 [submodule ".config/tmux/themes/nord-tmux"]
 	path = .config/tmux/themes/nord-tmux
-	url = https://github.com/arcticicestudio/nord-tmux.git
+	url = https://github.com/nordtheme/tmux.git

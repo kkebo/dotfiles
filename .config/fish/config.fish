@@ -39,7 +39,7 @@ fish_add_path -mP /opt/VirtualGL/bin
 
 # oh-my-posh
 if type -q oh-my-posh
-    oh-my-posh init fish --config $HOME/.config/omp/theme.omp.json | source
+    oh-my-posh init fish --config $HOME/.config/omp/theme.omp.json | source > /dev/null
 end
 
 # direnv

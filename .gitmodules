@@ -94,5 +94,8 @@
 	path = .config/alacritty/themes
 	url = https://github.com/alacritty/alacritty-theme
 [submodule ".config/tmux/themes/nord-tmux"]
-	path = .config/tmux/themes/nord-tmux
+	path = .config/tmux/plugins/nord-tmux
 	url = https://github.com/nordtheme/tmux.git
+[submodule ".config/tmux/plugins/tmux-prefix-highlight"]
+	path = .config/tmux/plugins/tmux-prefix-highlight
+	url = https://github.com/tmux-plugins/tmux-prefix-highlight.git

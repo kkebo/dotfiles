@@ -4,7 +4,7 @@ import = [
 ]
 
 [terminal]
-shell = { program = "/opt/homebrew/bin/fish", args = ["-lc", "tmux new -As main"] }
+shell = { program = "/opt/homebrew/bin/tmux", args = ["new", "-As", "main"] }
 
 [font]
 normal = { family = "SFMono Nerd Font", style = "Regular" }

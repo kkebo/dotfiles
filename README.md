@@ -31,7 +31,7 @@ cd dotfiles
 
 ### Prerequisites
 
-- iPadOS (iVim, a-Shell, iSH), macOS, FreeBSD, Linux, or WSL
+- iPadOS (iVim, a-Shell, Blink Shell, iSH), macOS, FreeBSD, Linux, or WSL
 - Vim 8.0 or later with Python 3 support
 - Python 3
 

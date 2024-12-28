@@ -1,3 +1,2 @@
 # For a-Shell
-# FIXME: https://github.com/holzschu/a-shell/issues/864
-# export PS1='\e[48;2;76;86;106m \w \e[m\e[38;2;76;86;106m\e[m '
+export PS1='\e[48;2;76;86;106m \w \e[m\e[38;2;76;86;106m\e[m '

@@ -110,18 +110,11 @@ cd dotfiles
 - `.profile.ashell`
   - Rename it to `.profile`
 
-## Alacritty
-
-### Prerequisites
-
-- macOS
-- fish
-- tmux
+## Ghostty
 
 ### Files
 
-- `.config/alacritty/alacritty.toml`
-- `.config/alacritty/*`
+- `.config/ghostty/config`
 
 ## Oh My Posh
 

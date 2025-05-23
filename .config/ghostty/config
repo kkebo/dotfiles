@@ -1,0 +1,16 @@
+# Appearance
+theme = MaterialDarker
+background-opacity = 0.8
+window-width = 140
+window-height = 48
+font-family = SFMono Nerd Font
+font-size = 12
+macos-titlebar-style = tabs
+window-colorspace = display-p3
+
+# Behavior
+copy-on-select = clipboard
+quit-after-last-window-closed=true
+
+# Keybindings
+keybind = global:ctrl+grave_accent=toggle_quick_terminal

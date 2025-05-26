@@ -281,7 +281,7 @@ if executable('pyright-langserver')
     au User lsp_setup call lsp#register_server({
         \ 'name': 'pyright',
         \ 'cmd': {server_info->['pyright-langserver', '--stdio']},
-        \ 'whitelist': ['python'],
+        \ 'allowlist': ['python'],
         \ })
 endif
 
@@ -289,7 +289,7 @@ if executable('rust-analyzer')
     au User lsp_setup call lsp#register_server({
         \ 'name': 'rust-analyzer',
         \ 'cmd': {server_info->['rust-analyzer']},
-        \ 'whitelist': ['rust'],
+        \ 'allowlist': ['rust'],
         \ })
 endif
 
@@ -297,13 +297,13 @@ if executable('xcrun')
     au User lsp_setup call lsp#register_server({
         \ 'name': 'sourcekit-lsp',
         \ 'cmd': {server_info->['xcrun', 'sourcekit-lsp']},
-        \ 'whitelist': ['swift'],
+        \ 'allowlist': ['swift'],
         \ })
 elseif executable('sourcekit-lsp')
     au User lsp_setup call lsp#register_server({
         \ 'name': 'sourcekit-lsp',
         \ 'cmd': {server_info->['sourcekit-lsp']},
-        \ 'whitelist': ['swift'],
+        \ 'allowlist': ['swift'],
         \ })
 endif
 

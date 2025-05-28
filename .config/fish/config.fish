@@ -18,9 +18,6 @@ end
 # Swift Package Manager
 fish_add_path -mP $HOME/.swiftpm/bin
 
-# Mint
-fish_add_path -mP $HOME/.mint/bin
-
 # Homebrew
 fish_add_path -mP /opt/homebrew/bin /opt/homebrew/sbin
 
@@ -31,20 +28,12 @@ fish_add_path -mP /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/
 set -x GOPATH $HOME/go
 fish_add_path -maP $GOPATH/bin
 
-# cross compiler
-fish_add_path -mP $HOME/opt/cross/bin
-
 # VirtualGL (macOS)
 fish_add_path -mP /opt/VirtualGL/bin
 
 # oh-my-posh
 if type -q oh-my-posh
     oh-my-posh init fish --config $HOME/.config/omp/theme.omp.json | source > /dev/null
-end
-
-# direnv
-if type -q direnv
-    direnv hook fish | source
 end
 
 # done

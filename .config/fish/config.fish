@@ -3,18 +3,6 @@ set -x LANG en_US.UTF-8
 
 set -g fish_greeting
 
-# For WSL
-if uname -r | string match -q -r 'Microsoft$'
-    set -x LIBGL_ALWAYS_INDIRECT 1
-    set -x DISPLAY localhost:0.0
-    set -x GTK_MODULES $GTK_MODULES appmenu-gtk-module
-    set -x UBUNTU_MENUPROXY 1
-    set -x NO_AT_BRIDGE 1
-    set -x XMODIFIERS @im=fcitx
-    set -x GTK_IM_MODULE fcitx
-    set -x QT_IM_MODULE fcitx
-end
-
 # Swift Package Manager
 fish_add_path -mP $HOME/.swiftpm/bin
 

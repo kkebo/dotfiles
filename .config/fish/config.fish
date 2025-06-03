@@ -16,9 +16,6 @@ fish_add_path -mP /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/
 set -x GOPATH $HOME/go
 fish_add_path -maP $GOPATH/bin
 
-# VirtualGL (macOS)
-fish_add_path -mP /opt/VirtualGL/bin
-
 # oh-my-posh
 if type -q oh-my-posh
     oh-my-posh init fish --config $HOME/.config/omp/theme.omp.json | source > /dev/null

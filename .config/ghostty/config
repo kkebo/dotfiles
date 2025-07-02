@@ -1,6 +1,5 @@
 # Appearance
 theme = MaterialDarker
-background-opacity = 0.8
 window-width = 140
 window-height = 48
 font-family = SFMono Nerd Font

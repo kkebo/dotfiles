@@ -111,7 +111,7 @@ let g:indentLine_leadingSpaceChar = '·'
 let g:vim_json_conceal = 0
 let g:markdown_syntax_conceal = 0
 
-" vim-code-dark or minimalist
+" vim-code-dark
 if has('termguicolors')
     set termguicolors
 
@@ -119,8 +119,8 @@ if has('termguicolors')
     colorscheme codedark
 else
     set t_Co=256
-    syntax on
-    colorscheme minimalist
+    set t_ut=
+    colorscheme codedark
 endif
 
 " Fern

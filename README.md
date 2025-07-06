@@ -45,7 +45,7 @@ cd dotfiles
 
 ### Prerequisites
 
-- macOS, FreeBSD, Linux, or WSL
+- iPadOS (iSH), macOS, FreeBSD, Linux, or WSL
 - fish
   - [Fisher](https://github.com/jorgebucaran/fisher)
     - `curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher update`
@@ -76,7 +76,7 @@ cd dotfiles
 
 ### Prerequisites
 
-- macOS, FreeBSD, Linux, or WSL
+- iPadOS (a-Shell, iSH), macOS, FreeBSD, Linux, or WSL
 - Git
 - GnuPG
   - `export GPG_TTY=$(tty)`
@@ -102,8 +102,7 @@ cd dotfiles
 
 ### Prerequisites
 
-- iPadOS
-- a-Shell
+- iPadOS (a-Shell)
 
 ### Files
 
@@ -111,6 +110,10 @@ cd dotfiles
   - Rename it to `.profile`
 
 ## Ghostty
+
+### Prerequisites
+
+- macOS or Linux
 
 ### Files
 
@@ -120,6 +123,7 @@ cd dotfiles
 
 ### Prerequisites
 
+- macOS, FreeBSD, or Linux
 - [Oh My Posh](https://ohmyposh.dev)
 
 ### Files

@@ -16,5 +16,5 @@ if test -e rg; then
 fi
 
 if test -e config; then
-    config -s 12 -n 'SFMono Nerd Font'
+    config -s 14 -n 'SFMono Nerd Font'
 fi

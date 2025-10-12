@@ -37,6 +37,10 @@ if type -q bat
     alias cat="bat"
     set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
     set -x MANROFFOPT "-c"
+else if type -q batcat  # For Debian
+    alias cat="batcat"
+    set -x MANPAGER "sh -c 'col -bx | batcat -l man -p'"
+    set -x MANROFFOPT "-c"
 end
 if type -q rg
     alias grep="rg"

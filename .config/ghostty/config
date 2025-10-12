@@ -13,5 +13,6 @@ copy-on-select = clipboard
 quit-after-last-window-closed=true
 
 # Keybindings
+macos-option-as-alt = true
 keybind = global:ctrl+grave_accent=toggle_quick_terminal
 keybind = shift+enter=text:\n

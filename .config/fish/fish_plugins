@@ -9,3 +9,4 @@ fisherman/spin
 fisherman/z
 evanlucas/fish-kubectl-completions
 danhper/fish-ssh-agent
+jorgebucaran/nvm.fish

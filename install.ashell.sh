@@ -10,7 +10,8 @@ ln -sf "$RELBASEDIR/.vim" .
 
 ln -sf "$RELBASEDIR/.profile.ashell" .profile
 ln -sf "$RELBASEDIR/.bashrc.ashell" .bashrc
+ln -sf "$RELBASEDIR/.toolbarDefinition" .
 
 mkdir -p .config
 # FIXME: `ln` can't link to "../somewhere" in dash
-ln -sf "$BASEDIR/.config/git" .config/
+ln -sf "$BASEDIR/.config/git.ashell" .config/git

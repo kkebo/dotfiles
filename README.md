@@ -78,7 +78,7 @@ cd dotfiles
 
 - iPadOS (a-Shell, iSH), macOS, FreeBSD, Linux, or WSL
 - Git
-- GnuPG
+- GnuPG (not required in a-Shell)
   - `export GPG_TTY=$(tty)`
   - importing my secret key with `gpg --import`
 
@@ -86,6 +86,8 @@ cd dotfiles
 
 - `.config/git/config`
 - `.config/git/ignore`
+- `.config/git.ashell/config` (For a-Shell)
+- `.config/git.ashell/ignore` (For a-Shell)
 
 ## Textastic
 
@@ -108,6 +110,7 @@ cd dotfiles
 
 - `.profile.ashell`
   - Rename it to `.profile`
+- `.toolbarDefinition`
 
 ## Ghostty
 

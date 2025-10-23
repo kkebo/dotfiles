@@ -14,4 +14,4 @@ ln -sf "$RELBASEDIR/.toolbarDefinition" .
 
 mkdir -p .config
 # FIXME: `ln` can't link to "../somewhere" in dash
-ln -sf "$BASEDIR/.config/git.ashell" .config/git
+ln -sfh "$BASEDIR/.config/git.ashell" .config/git

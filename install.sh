@@ -1,4 +1,6 @@
-#!/bin/sh -eux
+#!/bin/sh
+
+set -eux
 
 BASEDIR=$(cd "$(dirname "$0")" && pwd -P)
 RELBASEDIR=${BASEDIR#"$HOME/"}

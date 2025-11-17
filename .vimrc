@@ -276,13 +276,14 @@ if executable('sourcekit-lsp')
         \ })
 endif
 
-if executable('package-swift-lsp')
-    au User lsp_setup call lsp#register_server({
-        \ 'name': 'package-swift-lsp',
-        \ 'cmd': {server_info->['package-swift-lsp']},
-        \ 'allowlist': ['swift'],
-        \ })
-endif
+" FIXME: This breaks lsp-hover on Swift symbols.
+" if executable('package-swift-lsp')
+"     au User lsp_setup call lsp#register_server({
+"         \ 'name': 'package-swift-lsp',
+"         \ 'cmd': {server_info->['package-swift-lsp']},
+"         \ 'allowlist': ['swift'],
+"         \ })
+" endif
 
 function! s:on_lsp_buffer_enabled() abort
     setlocal omnifunc=lsp#complete

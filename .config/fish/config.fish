@@ -18,7 +18,10 @@ fish_add_path -maP $GOPATH/bin
 
 # oh-my-posh
 if string match -q -r '^(.*256col.*|alacritty|xterm-ghostty)$' $TERM; and type -q oh-my-posh
-    oh-my-posh init fish --config $HOME/.config/omp/theme.omp.json | source > /dev/null
+    if not test -e $HOME/.cache/oh-my-posh/init.fish
+        oh-my-posh init fish --config $HOME/.config/omp/theme.omp.json > $HOME/.cache/oh-my-posh/init.fish
+    end
+    source $HOME/.cache/oh-my-posh/init.fish
 end
 
 # done

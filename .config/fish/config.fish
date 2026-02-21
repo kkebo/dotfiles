@@ -3,6 +3,11 @@ set -x LANG en_US.UTF-8
 
 set -g fish_greeting
 
+# FreeBSD
+if type -q /usr/bin/uname && /usr/bin/uname -o | string match -q FreeBSD
+    fish_add_path -maP /usr/local/bin /usr/local/sbin /usr/bin /usr/sbin /bin /sbin
+end
+
 # Swift Package Manager
 fish_add_path -mP $HOME/.swiftpm/bin
 

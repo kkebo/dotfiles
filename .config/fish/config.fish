@@ -4,10 +4,17 @@ set -x LANG en_US.UTF-8
 set -g fish_greeting
 
 function fish_user_key_bindings
-    bind alt-left prevd-or-backward-word
-    bind alt-right nextd-or-forward-word
-    bind ctrl-left backward-token
     bind ctrl-right forward-token
+    bind ctrl-left backward-token
+    bind alt-right nextd-or-forward-word
+    bind \e\[1\;9C nextd-or-forward-word
+    bind alt-left prevd-or-backward-word
+    bind \e\[1\;9D prevd-or-backward-word
+    bind alt-backspace backward-kill-word
+    bind ctrl-alt-h backward-kill-word
+    bind ctrl-backspace backward-kill-token
+    bind alt-delete kill-word
+    bind ctrl-delete kill-token
 end
 
 fish_add_path -maP /usr/local/bin /usr/local/sbin /usr/bin /usr/sbin /bin /sbin

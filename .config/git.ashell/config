@@ -2,7 +2,6 @@
     name = Kenta Kubo
     email = 601636+kkebo@users.noreply.github.com
     identityFile = id_ed25519
-    password = ""
 [init]
     defaultBranch = main
 [push]

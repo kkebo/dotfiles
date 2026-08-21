@@ -13,3 +13,4 @@ alias la="ls -lah"
 alias grep="rg"
 
 config -s 14 -n 'SFMono Nerd Font'
+config -f "#eeffff" -b "#212121"

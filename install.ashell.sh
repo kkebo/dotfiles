@@ -14,6 +14,9 @@ ln -sf "$RELBASEDIR/.profile.ashell" .profile
 ln -sf "$RELBASEDIR/.bashrc.ashell" .bashrc
 ln -sf "$RELBASEDIR/.toolbarDefinition" .
 
+mkdir -p bin
+cp "$RELBASEDIR/bin/batless" bin/
+
 mkdir -p .config
 # FIXME: `ln` can't link to "../somewhere" in dash
 ln -sfh "$BASEDIR/.config/git.ashell" .config/git

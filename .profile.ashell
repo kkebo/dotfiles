@@ -8,3 +8,6 @@ alias ll="ls -lh"
 alias la="ls -lah"
 
 alias grep="rg"
+
+alias cat="bat"
+export MANPAGER="batless"

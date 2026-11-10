@@ -1,0 +1,2 @@
+#!/bin/sh
+bat -pflman $3 | less -R $1 $2

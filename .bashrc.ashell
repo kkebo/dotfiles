@@ -6,5 +6,5 @@ export PS1='\e[48;2;76;86;106m \w \e[m\e[38;2;76;86;106m\e[m '
 
 config -s 14 -n 'SFMono Nerd Font'
 config -l none
-config -f "#eeffff" -b "#212121" -c "#ffffff"
+config --theme material-darker
 config -k block

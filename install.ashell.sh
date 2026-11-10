@@ -17,6 +17,9 @@ ln -sf "$RELBASEDIR/.toolbarDefinition" .
 mkdir -p bin
 cp "$RELBASEDIR/bin/batless" bin/
 
+mkdir -p Themes
+cp "$RELBASEDIR/Themes/material-darker.json" Themes/
+
 mkdir -p .config
 # FIXME: `ln` can't link to "../somewhere" in dash
 ln -sfh "$BASEDIR/.config/git.ashell" .config/git

@@ -13,12 +13,10 @@ ln -sf "$RELBASEDIR/.vim" .
 ln -sf "$RELBASEDIR/.profile.ashell" .profile
 ln -sf "$RELBASEDIR/.bashrc.ashell" .bashrc
 ln -sf "$RELBASEDIR/.toolbarDefinition" .
+ln -sfh "$RELBASEDIR/Themes" .
 
 mkdir -p bin
 cp "$RELBASEDIR/bin/batless" bin/
-
-mkdir -p Themes
-cp "$RELBASEDIR/Themes/material-darker.json" Themes/
 
 mkdir -p .config
 # FIXME: `ln` can't link to "../somewhere" in dash

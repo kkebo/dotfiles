@@ -20,3 +20,6 @@ updates:
       vim:
         patterns:
           - ".vim/pack/plugins/*"
+      tmux:
+        patterns:
+          - ".config/tmux/plugins/*"

@@ -318,9 +318,6 @@ augroup lsp_install
 augroup END
 
 " vim-gitgutter
-if executable('rg')
-    let g:gitgutter_grep = 'rg'
-endif
 set updatetime=100
 
 " yaifa
